@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Handjet';
+    src: url('../fonts/Handjet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: 'PT Sans';
+    src: url('PTSans-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('PTSans-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('PTSans-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --forbg: #fbfbfb;
+	--primelogobsbcolours-logoyellow: #dfdc01;
+	--primelogobsbcolours-logobluepurple: #2d2650;
+	--primelogobsbcolours-logodarkgrey: #2b2a28;
+	--primelogobsbcolours-ancettxtgrey: #555454;
+	--primelogobsbcolours-supportdarkyellow: #c9c601;
+	--primelogobsbcolours-softlightyellow: #ebe965;
+	--primelogobsbcolours-supportlightpurple: #4a399d;
+	--primelogobsbcolours-softlightpurple: #9283db;
+	--primelogobsbcolours-clearwhite: #fff;
+	--primelogobsbcolours-almostwhite: #f5f5f5;
+	--primelogobsbcolours-clearblack: #000;
+	--pantonebsb-pantoneyellow: #edec3f;
+	--pantonebsb-pantonedarkblue: #141b4d;
+	--pantonebsb-pantonecoolgrey: #b1b3b3;
+	--cmykforbsb-cmykrefyellow: #cf0;
+	--cmykforbsb-cmykrefblue: #00006c;
+	--cmykforbsb-cmykrefgrey: #999;
+
+
+    --font-family: "PT Sans", sans-serif;
+    --second-family: "Handjet", sans-serif;
+    --third-family: "Press Start 2P", sans-serif;
+    --font3: "Eboy EXTAlpha", sans-serif;
+
+
+    --border-radius: 7px;
+
+    --container-width: 1100px;
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s;
+
+}
+
+body{
+    font-family: var(--font-family);
+    color: var(--primelogobsbcolours-logodarkgrey);
+    background: var(--primelogobsbcolours-clearwhite);
+    /* background: black; */
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.container{
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x) ;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: baseline;
+}
+.header__logo-link{ 
+    height: 45px;
+    width: 45px;
+    img{
+      height: inherit;  
+      width: inherit;  
+}}
+.header__menu-button{
+    fill: rgba(245, 245, 245, 0.2);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: none;
+outline: none;
+border: none;
+width: 35px;
+height: 35px;
+img{
+width: 35px;
+height: 35px;
+}
+}
+.wrapper{
+
+}
