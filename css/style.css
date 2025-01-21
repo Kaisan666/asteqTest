@@ -45,6 +45,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Eboy EXTAlpha';
+    src: url('../fonts/Eboy-EXTAlpha.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 :root{
     --forbg: #fbfbfb;
@@ -67,8 +75,8 @@
 	--cmykforbsb-cmykrefgrey: #999;
 
 
-    --font-family: "PT Sans", sans-serif;
-    --second-family: "Handjet", sans-serif;
+    --font-family: "Handjet", sans-serif;
+  --second-family: "PT Sans", sans-serif;
     --third-family: "Press Start 2P", sans-serif;
     --font3: "Eboy EXTAlpha", sans-serif;
 
@@ -90,6 +98,15 @@ body{
     font-size: 18px;
     font-weight: 400;
 }
+.welcome-section__wrapper{
+    background: url('../images/BG.svg');
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
 
 
 .container{
@@ -101,7 +118,7 @@ body{
 .header__inner{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    padding-top: 50px;
     align-items: baseline;
 }
 .header__logo-link{ 
@@ -112,8 +129,8 @@ body{
       width: inherit;  
 }}
 .header__menu-button{
-    fill: rgba(245, 245, 245, 0.2);
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /* fill: rgba(245, 245, 245, 0.2); */
+/* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
 background: none;
 outline: none;
 border: none;
@@ -126,4 +143,158 @@ height: 35px;
 }
 .wrapper{
 
+}
+.welcome-section__title{
+    margin-top: 115px;
+    font-family: var(--third-family);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    h1{
+        -webkit-text-stroke: 4px #2D2650;
+        font-family: var(--third-family);
+font-weight: 400;
+font-size: 80px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+background: linear-gradient(184deg, #2d2650 35.93%, #dfdc01 35.94%);
+background-clip: text;
+color: transparent;
+width: 332px;
+    }
+    h2{
+        color: transparent;
+        font-family: var(--third-family);
+font-weight: 400;
+font-size: 40px;
+line-height: 50%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+-webkit-text-stroke: 5px var(--primelogobsbcolours-clearwhite);
+/* paint-order: stroke fill;
+ */
+ 
+    }
+    
+}
+.welcome-section__description{
+margin-top: 59px;
+position: relative;
+h3{
+
+    width: 665px;
+    word-break: break-all;
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 30px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--primelogobsbcolours-logobluepurple);
+}
+}
+.welcome-section__description::before{
+    content: url(../images/LOGOVector.svg);
+    position: absolute;
+    left: 61.1%;
+    bottom: -35.5%;
+
+
+}
+
+.second-section{
+    height: 1525px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.second-section__text{
+
+
+height: 220px;
+padding-left: 30px;
+border-left: 10px solid var(--primelogobsbcolours-logobluepurple);
+h4{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: var(--primelogobsbcolours-logodarkgrey);
+    width: 670px;
+    height: 207px;
+    line-height: 1.25;
+}
+}
+
+.second-section__annotation{
+    margin-top: 403px;
+    max-width: 708px ;
+}
+.annotation h3{
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--pantonebsb-pantonecoolgrey);
+} 
+
+.second-section__areas{
+    margin-top: 76px;
+    display: flex;
+}
+.area-card{
+    width: 350px;
+    height: 588px;
+    position: relative;
+}
+.area-card:nth-child(1){
+    background: url('../images/IT.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 19.1% ;
+
+}
+.area-card:nth-child(2){
+    background: url('../images/IB.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 19.1% ;
+
+}
+.area-card:nth-child(3){
+    background: url('../images/SB.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 19.1% ;
+
+}
+.area-card__name{
+    /* word-break:normal; */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 266px;
+    width: 270px;
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 30px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--primelogobsbcolours-logobluepurple);
+}
+.third-section{
+    padding-top: 492px;
+}
+.third-section__annotation{
+    padding-top: 100px;
+}
+.third-section__expert{
+    margin-top: 76px;
+}
+.expert-card__percent-and-number{
+    font-family: var(--font3);
+font-weight: 500;
+font-size: 140px;
+letter-spacing: 0.05em;
+color: var(--primelogobsbcolours-logoyellow);
+}
+.expert-card__percent{
+    color: var(--primelogobsbcolours-logobluepurple);
 }
