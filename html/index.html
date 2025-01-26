@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -92,48 +93,365 @@
             </div>
             </div>
         </section>
-        <section class="third-section container">
-            <article class="third-section__expret-topic">
-                <div class="third-section__annotation annotation">
+        <section class="third-section">
+            <article class="third-section__expert-topic container">
+                <div class="third-section__expert-annotation annotation">
                     <h3>// уровень экспертности нашей команды</h3>
                 </div>
-                
+                <div class="third-section__card-wrapper">
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">80</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number">15</span><span class="expert-card__percent">%</span>
                             </h2>
-                            <span class="expert-card__title">аутсорсинг и облачные сервисы</span>
+                            <div class="expert-card__title-wrapper"><span class="expert-card__title">системная
+                                    интеграция</span></div>
                         </div>
                     </div>
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">80</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number">15</span><span class="expert-card__percent">%</span>
                             </h2>
-                            <span class="expert-card__title">аутсорсинг и облачные сервисы</span>
+                            <div class="expert-card__title-wrapper"><span class="expert-card__title">проектные
+                                    решения</span></div>
                         </div>
                     </div>
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">80</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number">2</span><span class="expert-card__percent">%</span>
                             </h2>
-                            <span class="expert-card__title">аутсорсинг и облачные сервисы</span>
+                            <div class="expert-card__title-wrapper"><span class="expert-card__title">аутсорсинг и
+                                    облачные сервисы</span></div>
                         </div>
                     </div>
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">80</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number">15</span><span class="expert-card__percent">%</span>
                             </h2>
-                            <span class="expert-card__title">аутсорсинг и облачные сервисы</span>
+                            <div class="expert-card__title-wrapper"><span class="expert-card__title">услуги в области
+                                    ит/иб</span></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="third-section__technologies ">
+                <div class="third-section__tech-annotation annotation container">
+                    <h3>// инструменты и технологии</h3>
+                </div>
+                <div class="scroller-wrapper">
+                    <div class="third-section__scroller scroller" data-direction="right">
+                        <div class="scroller__inner">
+                            <img class="scroller__icon" src="../images/logos/row1/Kasperskyicon.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row1/Битрикс 24.png" alt="">
+                            <img class="scroller__icon" src="../images/logos/row1/Kontur.png" alt="">
+                            <img class="scroller__icon" src="../images/logos/row1/Ya.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row1/1С_ предприятие.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row1/Kaspersky.png" alt="">
+                            <img class="scroller__icon" src="../images/logos/row1/Bitrix.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row1/СКБ контур.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row1/Яндекс. облако.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row1/1С_ предприятие.png" alt="">
+                        </div>
+                    </div>
+                    <div class="third-section__scroller scroller">
+                        <div class="scroller__inner">
+                            <img class="scroller__text" src="../images/logos/row2/1С_ предприятие.png" alt="">
+                            <img class="scroller__icon" src="../images/logos/row2/Ya.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row2/Битрикс 24.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row2/СКБ контур-1.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row2/Kaspersky.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row2/1C.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row2/Яндекс. облако.png" alt="">
+                            <img class="scroller__icon" src="../images/logos/row2/Bitrix.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row2/СКБ контур.png" alt="">
+                            <img class="scroller__text" src="../images/logos/row2/Kaspersky.png" alt="">
                         </div>
                     </div>
                 </div>
             </article>
         </section>
+        <section class="fourth-section container">
+            <article class="fourth-section__descriptions">
+                <div class="fourth-section__description-card description-card">
+                    <svg id="cloudSVG" width="288" height="273" viewBox="0 0 288 273" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="PixelIllustrationCloud=LD">
+                            <g id="pixelarticons:cloud" clip-path="url(#clip0_625_6985)">
+                                <path id="Vector"
+                                    d="M181.581 14.9644H113.581V37.631H90.9147V60.2977H45.5814V82.9643H22.9147V105.631H0.248047V173.631H22.9147V196.298H249.581V173.631H272.248V105.631H249.581V82.9643H226.915V60.2977H204.248V37.631H181.581V14.9644ZM204.248 105.631H249.581V173.631H22.9147V105.631H45.5814V82.9643H90.9147V105.631H113.581V82.9643H90.9147V60.2977H113.581V37.631H181.581V60.2977H204.248V105.631ZM204.248 105.631V128.298H181.581V105.631H204.248Z"
+                                    fill="#DFDC01" />
+                                <path id="cloud" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M87.3468 67.0063H139.606V84.4261H87.3468V67.0063ZM69.9271 101.846H87.3468V84.4261H69.9271V101.846ZM35.0876 119.266H69.9271V101.846H35.0876V119.266ZM17.6678 136.685H35.0876V119.266H17.6678V136.685ZM17.6678 188.945V136.685H0.248047V188.945H17.6678ZM191.865 188.945H17.6678V206.364H191.865V188.945ZM191.865 136.685H209.285V188.945H191.865V136.685ZM157.026 101.846H139.606V84.4261H157.026V101.846ZM157.026 101.846V136.685H191.865V119.266H174.446V101.846H157.026Z"
+                                    fill="#2D2650" />
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_625_6985">
+                                <rect width="272" height="272" transform="translate(0.248047 0.692383)" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <div class="description-card__text-wrapper">
+                        <h2 class="description-card__title">инфраструктурные ит-решения и системы</h2>
+                        <div class="description-card__text">Равным образом, высококачественный прототип будущего проекта
+                            предполагает независимые способы реализации стандартных подходов. Приятно, граждане,
+                            наблюдать, как непосредственные участники технического прогресса, которые представляют собой
+                            яркий пример континентально-европейского типа политической культуры, будут объективно
+                            рассмотрены соответствующими инстанциями.
+                            Кстати, действия представителей оппозиции ограничены исключительно образом мышления...</div>
+                        <button class="description-card__button">Продолжить</button>
+                    </div>
+                </div>
+                <div class="fourth-section__description-card description-card">
+                    <svg id="eyeSVG" width="272" height="272" viewBox="0 0 272 272" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="PixelIllustrationEye=LD">
+                            <g id="pixelarticons:eye" clip-path="url(#clip0_625_7035)">
+                                <g id="Vector">
+                                    <path d="M90.6667 0V22.65H22.6667V79.1748H0V22.65V0H22.6667H90.6667Z"
+                                        fill="#DFDC01" />
+                                    <path d="M181.333 22.65V0H249.333H272V22.65V79.1748H249.333V22.65H181.333Z"
+                                        fill="#DFDC01" />
+                                    <path d="M90.6667 249.35V272H22.6667H0V249.35V192.826H22.6667V249.35H90.6667Z"
+                                        fill="#DFDC01" />
+                                    <path d="M181.333 249.35V272H249.333H272V249.35V192.826H249.333V249.35H181.333Z"
+                                        fill="#DFDC01" />
+                                </g>
+                                <path
+                                    d="M103.779 76.7549H168.22V93.6221H103.779V76.7549ZM71.5592 110.489V93.6221H103.779V110.489H71.5592ZM55.449 127.356V110.489H71.5592V127.356H55.449ZM55.449 144.224V127.356H39.3389V144.224H55.449ZM71.5592 161.091H55.449V144.224H71.5592V161.091ZM103.779 177.958H71.5592V161.091H103.779V177.958ZM168.22 177.958V194.825H103.779V177.958H168.22ZM200.44 161.091V177.958H168.22V161.091H200.44ZM216.551 144.224V161.091H200.44V144.224H216.551ZM216.551 127.356H232.661V144.224H216.551V127.356ZM200.44 110.489H216.551V127.356H200.44V110.489ZM200.44 110.489V93.6221H168.22V110.489H200.44Z"
+                                    fill="#2D2650" />
+                                <path id="eye" d="M133.281 147.24H104.529V177.342H133.281V147.24Z" fill="#DFDC01" />
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_625_7035">
+                                <rect width="272" height="272" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+
+                    <div class="description-card__text-wrapper">
+                        <h2 class="description-card__title">решения по информационной безопасности</h2>
+                        <div class="description-card__text">Равным образом
+                            сложившаяся структура организации способствует подготовки и реализации системы обучения
+                            кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также
+                            сложившаяся структура организации требуют от нас анализа соответствующий условий
+                            активизации. Задача организации, в особенности же сложившаяся структура организации
+                            представляет собой интересный эксперимент проверки
+                            существенных финансовых и административных условий...</div>
+                        <button class="description-card__button">Продолжить</button>
+                    </div>
+                </div>
+                <div class="fourth-section__description-card description-card">
+                    <svg id="lock" width="272" height="272" viewBox="0 0 272 272" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="PixelIllustrationCastle=Open">
+                            <g id="pixelarticons:shield" clip-path="url(#clip0_625_7069)">
+                                <path id="Vector"
+                                    d="M269.762 0H2.23438V161.411H25.4092V23.1748H246.587V161.411H269.762V0ZM53.0564 161.411H25.4092V189.058H53.0564V161.411ZM53.0564 189.058H80.7037V216.706H108.351V244.353H80.7037V216.706H53.0564V189.058ZM108.351 244.353V272H163.645V244.353H191.293V216.706H163.645V244.353H108.351ZM246.587 161.411H218.94V189.058H191.293V216.706H218.94V189.058H246.587V161.411Z"
+                                    fill="#2D2650" />
+                                <g id="Vector_2">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M109.231 95.4751H93.1846V170.357H178.764V95.4751H162.718H152.021H119.928H109.231ZM168.067 106.173H119.928H103.882V159.66H168.067V106.173Z"
+                                        fill="#DFDC01" />
+                                    <path d="M141.323 122.219H130.626V143.614H141.323V122.219Z" fill="#DFDC01" />
+                                </g>
+                                <path id="startedLock" d="M109.231 74.0801H119.929V95.475H109.231V74.0801Z"
+                                    fill="#DFDC01" />
+                                <path id="middleLock" d="M120.325 63.3828H152.418V74.0803H120.325V95" />
+                                <path id="endLock"
+                                    d="M120.251 63.344V74.0803H163.041V95.4752H152.344V74.0803H120.251V95"
+                                    fill="#DFDC01" />
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_625_7069">
+                                <rect width="272" height="272" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+
+                    <div class="description-card__text-wrapper">
+                        <h2 class="description-card__title">системы безопасности</h2>
+                        <div class="description-card__text">Современные технологии достигли такого уровня, что
+                            социально-экономическое развитие, в своём классическом представлении, допускает внедрение
+                            укрепления моральных ценностей. Однозначно, акционеры крупнейших компаний объявлены
+                            нарушающими общечеловеческие нормы этики и морали. Кстати, стремящиеся вытеснить
+                            традиционное производство, нанотехнологии, вне зависимости от их уровня, должны быть
+                            разоблачены.
+                            Повседневная практика показывает, что высокотехнологичная концепция общественного уклада
+                            предопределяет высокую востребованность экономической целесообразности принимаемых решений.
+                            Ясность нашей позиции очевидна: разбавленное изрядной долей эмпатии,
+                        </div>
+                        <button class="description-card__button">Продолжить</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="fourth-section__partners">
+                <div class="fourth-section__annotation annotation">
+                    <h3>// партнеры</h3>
+                </div>
+                <div class="fourth-section__swiper swiper swiper-logo">
+                    <div class="swiper_wrapper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=google.png" alt="google logo">
+                                        <div class="swiper-slide__text">google</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=adidas.png" alt="google logo">
+                                        <div div class="swiper-slide__text">adidas</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=apple.png" alt="google logo">
+                                        <div class="swiper-slide__text">apple</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=benetton.png" alt="google logo">
+                                        <div class="swiper-slide__text">United colors of benetton</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=coca-cola.png" alt="google logo">
+                                        <div class="swiper-slide__text">Coca-Cola</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=hyundai.png" alt="google logo">
+                                        <div class="swiper-slide__text">Hyundai</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=jewel.png" alt="google logo">
+                                        <div class="swiper-slide__text">Jewel</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=papa-john-s-pizza.png"
+                                            alt="google logo">
+                                            <div class="swiper-slide__text">Papa John’s</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=prospect-investment.png"
+                                            alt="google logo">
+                                            <div class="swiper-slide__text">Prospect investment</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=puma.png" alt="google logo">
+                                        <div class="swiper-slide__text">Puma</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=rg-ru.png" alt="google logo">
+                                        <div class="swiper-slide__text">RG.ru</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__content">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <img class="swiper-slide__logo" src="../images/logos/partners2/LogoBox=AllPartnersIcon.png" alt="google logo">
+                                        <div class="swiper-slide__text">ВСЕ ПАРТНЕРЫ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    </div>
+            </article>
+        </section>
+        <section class="news-section container">
+            <article>
+                <div class="fourth-section__swiper swipe swiper-news">
+                    <div class="swiper_wrapper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                    <a class="swiper-slide__link" href="google.com">
+                                        <div class="swiper-slide__news-card news-card">
+                                            <div class="news-card__top">
+                                                <div class="news-card__date">
+                                                    23.11.2024
+                                                </div>
+                                                <div>
+                                                    <img class="news-card__circle" src="../images/TXT (1).png" alt="">
+
+                                                </div>
+                                            </div>
+                                            <div class="news-card__main">
+                                                <div class="news-card__titles-wrapper">
+                                                    <h2 class="news-card__title-visible news-card__title">Длинное название новости в две строки</h2>
+                                                    <h2 class="news-card__title-invisible news-card__title">Название новости в две строки чуть-чуть длиннее</h2>
+                                                </div>
+                                                <div class="news-card__text">
+                                                    Предварительные выводы неутешительны: укрепление и развитие внутренней структуры позволяет выполнить 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    </div>
+            </article>
+        </section>
     </main>
+
+
+    <script src="../js/animations.js"></script>
+    <script src="../js/marquee.js"></script>
+    <script src="../js/text.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 
 </html>
