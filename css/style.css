@@ -209,12 +209,12 @@ color: var(--primelogobsbcolours-logobluepurple);
 }
 
 .second-section__text{
-
-
 height: 220px;
 padding-left: 30px;
 border-left: 10px solid var(--primelogobsbcolours-logobluepurple);
-h4{
+
+}
+.second-section__text h4{
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 18px;
@@ -222,8 +222,6 @@ h4{
     color: var(--primelogobsbcolours-logodarkgrey);
     width: 670px;
     height: 207px;
-    line-height: 1.25;
-}
 }
 
 .second-section__annotation{
@@ -495,24 +493,28 @@ font-weight: 400;
 font-size: 18px;
 letter-spacing: 0.05em;
 color: var(--primelogobsbcolours-logodarkgrey);
-display: -webkit-box;
+/* display: -webkit-box; */
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 4;
 overflow: hidden;
-transition: all 0.75s ease-out;
 max-height: 100px;
 margin: 24px 0 48px;
+transition: max-height 5s ease;
 }
 
-.description-card__text.full1{
+/* .description-card__text.full1{
     -webkit-line-clamp: unset;
     display: block;
     
-}
+} */
 .description-card__text.full2{
+    /* -webkit-line-clamp: unset; */
+    display: block;
     max-height: 1000px;
-    transition: all 0.75s;
+    transition: max-height 0.5s ease;
 }
+
+
 .description-card__button{
     position: relative;
     font-family: var(--font-family);
@@ -590,7 +592,8 @@ transition: 0.4s;
     padding-bottom: 255px;
     background: url("../images/NewsBG.svg");
     background-repeat: no-repeat;
-    background-position: 66% 50%;
+    /* background-position: 66% 50%; */
+    background-position: center;
 }
 
 .news-card{
@@ -752,6 +755,20 @@ box-shadow: 0 1px 24px -1px rgba(0, 0, 0, 0.1);
 display: flex;
 flex-direction: column;
 gap: 36px;
+}
+.contact-form-main h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    color: var(--primelogobsbcolours-logobluepurple);
+}
+.contact-form-main input::placeholder{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 0.05em;
+color: var(--primelogobsbcolours-ancettxtgrey);
 }
 
 .contact-form__fio-input{
