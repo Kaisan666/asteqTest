@@ -2,12 +2,10 @@ const swiper_news = new Swiper('.swiper_wrapper-news', {
   loop: true,
   spaceBetween : 30,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

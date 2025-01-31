@@ -7,12 +7,6 @@ const toEighty = [2, 50, 47, 15, 11, 87, 65, 32, 22, 80];
 let iteration = 0;
 
 const changeNumber = () => {
-    // gsap.to("#outerCircle", {
-    //     duration : 4,
-    //     attr : {
-    //         d : "M143 0C221.977 0 286 64.0233 286 143C286 221.977 221.977 286 143 286C64.0233 286 0 221.977 0 143C0 64.0233 64.0233 0 143 0ZM143 244.509C199.062 244.509 244.509 199.062 244.509 143C244.509 86.9381 199.062 41.491 143 41.491C86.9381 41.491 41.491 86.9381 41.491 143C41.491 199.062 86.9381 244.509 143 244.509Z"
-    //     }
-    // })
     const numberInterval = setInterval(() => {
         if (numberToHundred.length > 0 && numberToEighty) {
             numberToHundred.forEach(number => {

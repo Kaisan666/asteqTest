@@ -14,29 +14,6 @@
     font-display: swap;
 }
 
-/* @font-face {
-    font-family: 'PT Sans';
-    src: url('PTSans-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    src: url('PTSans-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    src: url('PTSans-BoldItalic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-} */
 
 @font-face {
     font-family: 'PT Sans';
@@ -99,7 +76,6 @@ body{
     font-family: var(--font-family);
     color: var(--primelogobsbcolours-logodarkgrey);
     background: var(--primelogobsbcolours-clearwhite);
-    /* background: black; */
     font-size: 18px;
     font-weight: 400;
 }
@@ -136,7 +112,6 @@ body{
     justify-content: space-between;
     padding-top: 50px;
     align-items: baseline;
-    /* position: absolute; */
     gap: 1000px;
     z-index: 2;
 }
@@ -153,29 +128,24 @@ body{
 }
 
 .header__titles-inner{
-    /* transform: translateY(-42.5%); */
     animation: titlesAnimationHeader 8s infinite linear;
     animation-delay: 2s;
     height: max-content;
 }
 
 @keyframes titlesAnimationHeader {
-    /* Пауза в начале (первые 20% времени) */
     0%, 20% {
         transform: translateY(0);
     }
 
-    /* Движение вверх (30% времени) */
     50% {
         transform: translateY(-42.5%);
     }
 
-    /* Пауза на середине (10% времени) */
     60% {
         transform: translateY(-42.5%);
     }
 
-    /* Движение вверх до конца (30% времени) */
     80% {
         transform: translateY(-85%);
     }
@@ -183,10 +153,9 @@ body{
         transform: translateY(-85%);
     }
 
-    /* Мгновенный возврат в начало (последние 10% времени) */
     100% {
         transform: translateY(0);
-        animation-timing-function: steps(1, jump-end); /* Резкий переход */
+        animation-timing-function: steps(1, jump-end);
     }
 }
 
@@ -200,8 +169,6 @@ body{
         width: inherit;  
   }
 .header__menu-button{
-    /* fill: rgba(245, 245, 245, 0.2); */
-/* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
 background: none;
 outline: none;
 border: none;
@@ -376,7 +343,7 @@ white-space: nowrap;
     color: var(--primelogobsbcolours-logobluepurple);
     width: 0%;
     overflow: hidden;
-    white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+    white-space: nowrap; 
     transition: width 5s ease;
 
 }
@@ -408,9 +375,8 @@ white-space: nowrap;
     transition: transform 1s ease 5s;
 }
 
-/* При добавлении класса .active к родителю */
 .second-section__cirles-descriptions-text.active::after {
-    transform: scaleX(0); /* Уменьшение до нулевой ширины */
+    transform: scaleX(0); 
 }
 
 
@@ -437,7 +403,6 @@ background: var(--primelogobsbcolours-softlightyellow);
 transform: translate(-10px, -5px);
 }
 .accept-button__bg{
-    /* background: url("../images/button__background.svg"); */
     content: url("../images/section2_Circles/cook.svg");
     position: absolute;
     left: 0;
@@ -454,7 +419,6 @@ color: var(--primelogobsbcolours-softlightyellow);
 }
 
 .second-section__cirles-wrapper div:nth-child(1){
-    /* padding-right: 268px; */
     position: relative;
     opacity: 0;
 }
@@ -463,7 +427,6 @@ color: var(--primelogobsbcolours-softlightyellow);
     transition: opacity 1s ease;
 }
 .second-section__cirles-wrapper div:nth-child(2) img{
-    /* padding-right: 268px; */
     position: relative;
     opacity: 0;
 }
@@ -479,7 +442,6 @@ color: var(--primelogobsbcolours-softlightyellow);
     background: var(--primelogobsbcolours-logoyellow);
     position: absolute;
     bottom: 50%;
-    /* mask: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 0%); */
     transition: width 0.5s ease 1s;
 }   
 .second-section__cirles-wrapper div:nth-child(1).active::after{
@@ -487,7 +449,6 @@ color: var(--primelogobsbcolours-softlightyellow);
     transition: width 0.5s ease 1s;
 }   
 .second-section__cirles-wrapper div:nth-child(2){
-    /* padding-right: 268px; */
     position: relative;
 }
 .second-section__cirles-wrapper div:nth-child(2)::after{
@@ -504,7 +465,6 @@ color: var(--primelogobsbcolours-softlightyellow);
 } 
 
 .second-section__cirles-wrapper div:nth-child(3){
-    /* padding-right: 268px; */
     position: relative;
     opacity: 0;
 }
@@ -712,10 +672,6 @@ color: var(--primelogobsbcolours-logoyellow);
     left: 36%;
     bottom: 15%;
 }
-/* #circleLoader path:first-child{
-    stroke-dasharray: 1537px;
-    stroke-dashoffset: 1537px;
-} */
 
 
 
@@ -725,8 +681,6 @@ color: var(--primelogobsbcolours-logoyellow);
     word-break: keep-all;
     bottom:-5.75%;
     border-radius: 7px;
-    /* left: 10%; */
-    /* width: 279px; */
     padding: 6px 31px;
     height: 40px;
     backdrop-filter: blur(20px);
@@ -757,7 +711,6 @@ text-transform: uppercase;
 
 .scroller{
     max-width: 100vw;
-    /* overflow: hidden; */
 }
 .scroller__inner{
     display: flex;
@@ -790,7 +743,6 @@ text-transform: uppercase;
 @keyframes scroll {
     to {
         transform: translate(calc(-50% - 72px));
-        /* transform: translate(calc(-6000px)); */
     }
 }
 
@@ -916,11 +868,6 @@ margin: 24px 0 48px;
 transition: max-height .5s ease;
 }
 
-/* .description-card__text.full1{
-    -webkit-line-clamp: unset;
-    display: block;
-    
-} */
 .description-card__text.full2{
     -webkit-line-clamp: unset;
     display: block;
@@ -954,7 +901,6 @@ background: var(--primelogobsbcolours-softlightyellow);
 transform: translate(-25px, -5px);
 }
 .button-jump__bg{
-    /* background: url("../images/button__background.svg"); */
     content: url("../images/button__background.svg");
     position: absolute;
     left: 0;
@@ -1008,10 +954,8 @@ transition: 0.4s;
 .news-section{
     padding-top: 255px;
     padding-bottom: 255px;
-    /* background: url("../images/NewsBG.svg"); */
     background-repeat: no-repeat;
     background-position: 66% 50%;
-    /* background-position: center; */
 }
 .news-section article{
     position: relative;
@@ -1024,7 +968,6 @@ transition: 0.4s;
 }
 
 .news-card{
-    /* display: flex; */
 border: 5px solid var(--primelogobsbcolours-almostwhite);
 border-radius: 14px;
 width: 350px;
