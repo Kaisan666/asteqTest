@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,52 +12,205 @@
 </head>
 
 <body>
+    <div class="menu">
+        <svg class="bgMAIN" width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="BG">
+            <circle id="Ellipse18" cx="481" cy="491" r="778" fill="url(#paint0_linear_270_467)"/>
+            <circle id="Ellipse19" cx="1121" cy="465" r="554" fill="url(#paint1_linear_270_467)"/>
+            <circle id="Ellipse20" cx="521" cy="223" r="1622" fill="url(#paint2_radial_270_467)"/>
+            <circle id="Ellipse21" cx="404.659" cy="1139.94" r="627" transform="rotate(-12 404.659 1139.94)" fill="url(#paint3_linear_270_467)"/>
+            </g>
+            <defs>
+            <linearGradient id="paint0_linear_270_467" x1="-229.383" y1="-86.5937" x2="1228.86" y2="860.041" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#DFDC01"/>
+            <stop offset="0.703125" stop-color="#D9D9D9" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_270_467" x1="1651.22" y1="198.732" x2="895.919" y2="748.671" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2D2650"/>
+            <stop offset="1" stop-color="#2D2650" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="paint2_radial_270_467" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(521 223) rotate(134.865) scale(2041.66)">
+            <stop stop-color="#DFDC01"/>
+            <stop offset="0.410521" stop-color="#2D2650" stop-opacity="0.1"/>
+            <stop offset="0.649319" stop-color="#DFDC01" stop-opacity="0"/>
+            <stop offset="1" stop-color="#DFDC01" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="paint3_linear_270_467" x1="-177.039" y1="1560.13" x2="2732.11" y2="161.687" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#DFDC01" stop-opacity="0.1"/>
+            <stop offset="0.886972" stop-color="#DFDC01" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+        <header class="menu-header container">
+            <div class="menu-header__inner container">
+                <a href="/" class="header__logo-link">
+                    <img src="../icons/LOGOVectorHeader.svg" alt="лого" class="header__logo-img">
+                </a>
+
+                <div class="menu__input-search">
+                    <!-- <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.82812 0H12.8281V2H4.82812V0ZM2.82812 4V2H4.82812V4H2.82812ZM2.82812 12H0.828125V4H2.82812V12ZM4.82812 14H2.82812V12H4.82812V14ZM12.8281 14V16H4.82812V14H12.8281ZM14.8281 12H12.8281V14H14.8281V16H16.8281V18H18.8281V20H20.8281V18H18.8281V16H16.8281V14H14.8281V12ZM14.8281 4H16.8281V12H14.8281V4ZM14.8281 4V2H12.8281V4H14.8281Z" />
+                      </svg> -->
+                    <input type="text" placeholder="Поиск по сайту">
+                </div>
+
+                <button type="button" class="header__menu-button button">
+                    <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.485352 0.366089H14.1742V14.0549H0.485352V0.366089Z"/>
+                        <path d="M21.3115 0.366089H35.0003V14.0549H21.3115V0.366089Z" />
+                        <path d="M21.3115 21.9452H35.0003V35.634H21.3115V21.9452Z"/>
+                        <path d="M0.485358 21.8939H14.1742V35.5827H0.485358V21.8939Z" />
+                      </svg>
+
+                </button>
+            </div>
+           
+        </header>
+        <div class="menu-content container">
+            <div class="menu__main">
+                <div class="menu__list-wrapper">
+                    <h5 class="menu__list-title"><a href="">Решения</a></h5>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="">информационная безопасность</a></li>
+                        <li class="menu__list-item"><a href="">Информационные технологии</a></li>
+                        <li class="menu__list-item"><a href="">Системы безопасности</a></li>
+                        <li class="menu__list-item"><a href="">Импортозамещение</a></li>
+                    </ul>
+                </div>
+                <div class="menu__list-wrapper">
+                    <h5 class="menu__list-title"><a href="">Продукты</a></h5>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="">Информационная безопасность</a></li>
+                        <li class="menu__list-item"><a href="">Информационные технологии</a></li>
+                        <li class="menu__list-item"><a href="">Системы безопасности</a></li>
+                    </ul>
+                </div>
+                <div class="menu__list-wrapper">
+                    <h5 class="menu__list-title"><a href="">О компании</a></h5>
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="">Новости</a></li>
+                        <li class="menu__list-item">
+                            <a href="">Вакансии</a></li>
+                        <li class="menu__list-item"><a href="">Контактная информация</a></li>
+                    </ul>
+                </div>
+                <div class="menu__list-wrapper">
+                    <h5 class="menu__list-title"><a href="">Экспертиза</a></h5>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="">Кейсы</a></li>
+                        <li class="menu__list-item"><a href="">Отрасли</a></li>
+                    </ul>
+                </div>
+                <div class="menu__list-wrapper">
+                    <h5 class="menu__list-title"><a href="">Услуги</a></h5>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="">Внедрение</a></li>
+                        <li class="menu__list-item"><a href="">Разработка</a></li>
+                        <li class="menu__list-item"><a href="">Консалтинг</a></li>
+                    </ul>
+                </div>
+                <div class="menu__list-wrapper">
+                    <h5 class="menu__list-title"><a href="">Партнеры</a></h5>
+                    <ul class="menu__list">
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-card">
+                <h2>Заинтересовались нашими услугами?</h2>
+                <p>Оставьте заявку мы обязательно свяжемся с Вами!</p>
+    
+                <div class="button-jump__wrapper">
+                    <button class="menu-button">Оставить заявку</button>
+                    <div class="menu-button__bg"></div>
+                </div>
+            </div>
+            <div class="menu__contacts">
+                <div class="menu__phone"><a href="tel:+74957414660">+7 495 741-46-60</a></div>
+                <div class="menu__email"><a href="mailto:info@bd-decurity.ru">info@bd-decurity.ru</a></div>
+                <div class="menu__adress">
+                    <div>121170, Российская Федерация,</div>
+                    г. Москва, ул. 1812 года, д.10, к.2, кв.1</div>
+                <div class="menu__socials">
+                    <a href="https://vk.com">
+                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0082 28.2403C38.1015 26.4144 36.9068 24.7464 35.4698 23.3003C34.9892 22.7572 34.486 22.2345 33.9615 21.7337L33.8982 21.672C33.7034 21.4829 33.5112 21.2912 33.3215 21.097C35.2858 18.3655 36.9667 15.4409 38.3382 12.3687L38.3932 12.2453L38.4315 12.1153C38.6132 11.5103 38.8198 10.3603 38.0865 9.32033C37.3265 8.247 36.1115 8.05366 35.2965 8.05366H31.5515C30.7673 8.01793 29.992 8.23116 29.3364 8.66284C28.6808 9.09453 28.1785 9.72254 27.9015 10.457C27.0955 12.3764 26.0865 14.204 24.8915 15.9087V11.5203C24.8915 10.9537 24.8382 10.0037 24.2298 9.20366C23.5032 8.24366 22.4515 8.05366 21.7215 8.05366H15.7782C15.0026 8.03582 14.2499 8.31693 13.6759 8.83879C13.102 9.36064 12.7507 10.0833 12.6948 10.857L12.6898 10.932V11.007C12.6898 11.8153 13.0098 12.412 13.2665 12.787C13.3815 12.9553 13.5032 13.1087 13.5815 13.2053L13.5982 13.227C13.6815 13.3303 13.7365 13.3987 13.7915 13.4753C13.9382 13.672 14.1465 13.9787 14.2065 14.7687V17.2237C13.0135 15.2259 12.0352 13.1074 11.2882 10.9037L11.2748 10.867L11.2615 10.832C11.0582 10.3003 10.7332 9.527 10.0815 8.937C9.3215 8.24533 8.4215 8.05366 7.60317 8.05366H3.80317C2.97484 8.05366 1.9765 8.247 1.2315 9.032C0.499837 9.80533 0.416504 10.732 0.416504 11.222V11.4453L0.463171 11.662C1.51534 16.5466 3.68356 21.1215 6.79817 25.0287C8.22213 27.2742 10.1553 29.1524 12.4409 30.5111C14.7265 31.8698 17.3002 32.6706 19.9532 32.8487L20.0215 32.8537H20.0915C21.3015 32.8537 22.5632 32.7487 23.5115 32.117C24.7898 31.2637 24.8915 29.9553 24.8915 29.302V27.4053C25.2198 27.672 25.6265 28.0287 26.1248 28.5087C26.7282 29.112 27.2082 29.6353 27.6198 30.092L27.8398 30.3353C28.1598 30.692 28.4748 31.0437 28.7615 31.332C29.1215 31.6937 29.5665 32.092 30.1232 32.387C30.7282 32.7053 31.3632 32.8503 32.0365 32.8503H35.8382C36.6398 32.8503 37.7882 32.6603 38.5965 31.7237C39.4765 30.7037 39.4098 29.452 39.1332 28.5537L39.0832 28.392L39.0082 28.2403ZM29.4748 28.417C28.9583 27.8396 28.4264 27.276 27.8798 26.727L27.8748 26.722C25.6132 24.542 24.5582 24.1637 23.8115 24.1637C23.4132 24.1637 22.9748 24.207 22.6898 24.5637C22.5615 24.7338 22.4773 24.9331 22.4448 25.1437C22.4047 25.3882 22.3868 25.6359 22.3915 25.8837V29.302C22.3915 29.727 22.3215 29.9053 22.1248 30.0353C21.8632 30.2103 21.3048 30.352 20.1065 30.352C17.8302 30.1971 15.6231 29.5042 13.6668 28.3301C11.7105 27.1561 10.0607 25.5345 8.85317 23.5987L8.83984 23.577L8.82317 23.557C5.9217 19.9456 3.89958 15.7091 2.9165 11.182C2.92317 10.9653 2.96984 10.8337 3.0465 10.7537C3.12484 10.6703 3.3165 10.5537 3.80317 10.5537H7.60317C8.02484 10.5537 8.24484 10.647 8.40317 10.7887C8.57984 10.952 8.7365 11.227 8.92317 11.717C9.8565 14.4603 11.1165 17.027 12.3115 18.912C12.9082 19.8553 13.4948 20.6403 14.0248 21.1953C14.2898 21.472 14.5482 21.702 14.7965 21.8653C15.0348 22.022 15.3065 22.147 15.5865 22.147C15.7332 22.147 15.9048 22.1303 16.0698 22.0587C16.248 21.98 16.3947 21.8438 16.4865 21.672C16.6582 21.3587 16.7065 20.897 16.7065 20.292V14.6703C16.6182 13.307 16.2065 12.5387 15.8065 11.9937C15.7255 11.8847 15.6421 11.7774 15.5565 11.672L15.5348 11.6453C15.4638 11.559 15.3959 11.4701 15.3315 11.3787C15.2495 11.2767 15.2001 11.1524 15.1898 11.022C15.2029 10.8896 15.2661 10.7671 15.3665 10.6798C15.4669 10.5924 15.5969 10.5467 15.7298 10.552H21.7215C22.0648 10.552 22.1798 10.6353 22.2382 10.7137C22.3215 10.822 22.3915 11.047 22.3915 11.5203V19.067C22.3915 19.9637 22.8048 20.5703 23.4048 20.5703C24.0948 20.5703 24.5932 20.152 25.4632 19.282L25.4782 19.2653L25.4915 19.2503C27.4431 16.8708 29.0377 14.2196 30.2248 11.3803L30.2315 11.3603C30.3207 11.1095 30.4895 10.8947 30.7122 10.7487C30.9349 10.6028 31.1992 10.5337 31.4648 10.552H35.2982C35.8182 10.552 35.9882 10.6853 36.0448 10.7637C36.1032 10.847 36.1448 11.0253 36.0448 11.3753C34.6758 14.4359 32.9834 17.3413 30.9965 20.042L30.9832 20.062C30.7915 20.357 30.5798 20.6837 30.5498 21.057C30.5165 21.4603 30.6898 21.8253 30.9948 22.2187C31.2165 22.5453 31.6748 22.9937 32.1398 23.4487L32.1832 23.492C32.6698 23.9687 33.1982 24.4853 33.6215 24.9853L33.6332 24.997L33.6448 25.0103C34.9072 26.2695 35.9569 27.725 36.7532 29.3203C36.8798 29.7537 36.8032 29.977 36.7032 30.092C36.5882 30.2253 36.3298 30.3503 35.8398 30.3503H32.0365C31.7773 30.3566 31.5208 30.2964 31.2915 30.1753C31.0105 30.0119 30.7555 29.8074 30.5348 29.5687C30.2965 29.3303 30.0382 29.042 29.7215 28.6903L29.4765 28.417H29.4748Z"/>
+                            </svg>
+                            
+                    </a>
+                    <a href="">
+                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32.5875 5.12701C32.1862 5.15621 31.7924 5.25035 31.4213 5.40576H31.4163C31.06 5.54701 29.3663 6.25951 26.7913 7.33951L17.5638 11.2258C10.9425 14.0133 4.43378 16.7583 4.43378 16.7583L4.51128 16.7283C4.51128 16.7283 4.06253 16.8758 3.59378 17.197C3.30419 17.3813 3.05499 17.6224 2.86128 17.9058C2.63128 18.2433 2.44628 18.7595 2.51503 19.2933C2.62753 20.1958 3.21253 20.737 3.63253 21.0358C4.05753 21.3383 4.46253 21.4795 4.46253 21.4795H4.47253L10.5763 23.5358C10.85 24.4145 12.4363 29.6295 12.8175 30.8308C13.0425 31.5483 13.2613 31.997 13.535 32.3395C13.6675 32.5145 13.8225 32.6608 14.0088 32.7783C14.1056 32.8346 14.2088 32.8791 14.3163 32.9108L14.2538 32.8958C14.2725 32.9008 14.2875 32.9158 14.3013 32.9208C14.3513 32.9345 14.385 32.9395 14.4488 32.9495C15.415 33.242 16.1913 32.642 16.1913 32.642L16.235 32.607L19.8388 29.3258L25.8788 33.9595L26.0163 34.0183C27.275 34.5708 28.55 34.2633 29.2238 33.7208C29.9025 33.1745 30.1663 32.4758 30.1663 32.4758L30.21 32.3633L34.8775 8.45201C35.01 7.86201 35.0438 7.30951 34.8975 6.77326C34.7467 6.23054 34.3985 5.76377 33.9213 5.46451C33.5206 5.22091 33.0559 5.10332 32.5875 5.12701ZM32.4613 7.68951C32.4563 7.76826 32.4713 7.75951 32.4363 7.91076V7.92451L27.8125 31.587C27.7925 31.6208 27.7588 31.6945 27.6663 31.7683C27.5688 31.8458 27.4913 31.8945 27.085 31.7333L19.6975 26.0695L15.235 30.137L16.1725 24.1495L28.2425 12.8995C28.74 12.437 28.5738 12.3395 28.5738 12.3395C28.6088 11.772 27.8225 12.1733 27.8225 12.1733L12.6025 21.602L12.5975 21.577L5.30253 19.1208V19.1158L5.28378 19.112C5.29656 19.1078 5.30909 19.1028 5.32128 19.097L5.36128 19.077L5.40003 19.0633C5.40003 19.0633 11.9138 16.3183 18.535 13.5308C21.85 12.1345 25.19 10.7283 27.7588 9.64326C29.2822 9.00202 30.8072 8.36451 32.3338 7.73076C32.4363 7.69076 32.3875 7.68951 32.4613 7.68951Z" />
+                            </svg>
+                            
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
     <div class="welcome-section__wrapper">
-        <header class="welcome-section__header header">
+        <svg class="bgMAIN" width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="BG">
+            <circle id="Ellipse18" cx="481" cy="491" r="778" fill="url(#paint0_linear_270_467)"/>
+            <circle id="Ellipse19" cx="1121" cy="465" r="554" fill="url(#paint1_linear_270_467)"/>
+            <circle id="Ellipse20" cx="521" cy="223" r="1622" fill="url(#paint2_radial_270_467)"/>
+            <circle id="Ellipse21" cx="404.659" cy="1139.94" r="627" transform="rotate(-12 404.659 1139.94)" fill="url(#paint3_linear_270_467)"/>
+            </g>
+            <defs>
+            <linearGradient id="paint0_linear_270_467" x1="-229.383" y1="-86.5937" x2="1228.86" y2="860.041" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#DFDC01"/>
+            <stop offset="0.703125" stop-color="#D9D9D9" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_270_467" x1="1651.22" y1="198.732" x2="895.919" y2="748.671" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2D2650"/>
+            <stop offset="1" stop-color="#2D2650" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="paint2_radial_270_467" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(521 223) rotate(134.865) scale(2041.66)">
+            <stop stop-color="#DFDC01"/>
+            <stop offset="0.410521" stop-color="#2D2650" stop-opacity="0.1"/>
+            <stop offset="0.649319" stop-color="#DFDC01" stop-opacity="0"/>
+            <stop offset="1" stop-color="#DFDC01" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="paint3_linear_270_467" x1="-177.039" y1="1560.13" x2="2732.11" y2="161.687" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#DFDC01" stop-opacity="0.1"/>
+            <stop offset="0.886972" stop-color="#DFDC01" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+            </svg>
+        <header class="welcome-section__header header container">
             <div class="header__inner container">
                 <a href="/" class="header__logo-link">
                     <img src="../icons/LOGOVectorHeader.svg" alt="лого" class="header__logo-img">
                 </a>
 
                 <button type="button" class="header__menu-button button">
-                    <svg width="35" height="35" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d_2043_815)">
-                            <path d="M4.48511 0.366028H18.1739V14.0548H4.48511V0.366028Z" fill="#F5F5F5"
-                                fill-opacity="0.2" shape-rendering="crispEdges" />
-                            <path d="M25.3112 0.366028H39.0001V14.0548H25.3112V0.366028Z" fill="#F5F5F5"
-                                fill-opacity="0.2" shape-rendering="crispEdges" />
-                            <path d="M25.3112 21.9451H39.0001V35.6339H25.3112V21.9451Z" fill="#F5F5F5"
-                                fill-opacity="0.2" shape-rendering="crispEdges" />
-                            <path d="M4.48511 21.8938H18.1739V35.5826H4.48511V21.8938Z" fill="#F5F5F5"
-                                fill-opacity="0.2" shape-rendering="crispEdges" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_d_2043_815" x="0.485107" y="0.366028" width="42.515" height="43.2679"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="4" />
-                                <feGaussianBlur stdDeviation="2" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2043_815" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2043_815"
-                                    result="shape" />
-                            </filter>
-                        </defs>
-                    </svg>
+                    <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.485352 0.366089H14.1742V14.0549H0.485352V0.366089Z"/>
+                        <path d="M21.3115 0.366089H35.0003V14.0549H21.3115V0.366089Z" />
+                        <path d="M21.3115 21.9452H35.0003V35.634H21.3115V21.9452Z"/>
+                        <path d="M0.485358 21.8939H14.1742V35.5827H0.485358V21.8939Z" />
+                      </svg>
 
                 </button>
             </div>
            
         </header>
-        <div class="welcome-section__title container">
-            <h1>БСБ-</h1>
-            <h2>бизнес</h2>
-        </div>
-        <div class="welcome-section__description container">
-            <h3>экспертиза в области <br> информационных технологий и безопасности</h3>
+        <div class="welcome-section__text-wrapper">
+            <div class="welcome-section__title container">
+                <h1>БСБ-</h1>
+                <h2 class="header__titles">
+                    <div class="header__titles-inner">
+                        <img src="../images/header/footerTitleBissnes.svg" alt="">
+                        <img src="../images/header/footerTitlesSecirity.svg" alt="">
+                        <img src="../images/header/footerTitleSystems.svg" alt="">
+                    </div>
+                </h2>
+            </div>
+            <div class="welcome-section__description container">
+                <h3>экспертиза в области <br> информационных технологий и безопасности</h3>
+            </div>
         </div>
     </div>
     <main class="main">
@@ -70,25 +224,86 @@
                     активности играет важную роль в массовом скоплении людей. Товарищи!
                     Рамки и место обучения кадров играют важную роль в моделях развития.</h4>
             </div>
+
+            <div class="second-section__cirles">
+                <div class="second-section__cirles-wrapper">
+                    <div id="circle1"><img src="../images/section2_Circles/Circle.svg" alt=""></div>
+                    <div id="circle2"><img id="circle2IMG" src="../images/section2_Circles/Circle-1.svg" alt=""></div>
+                    <div id="circle3"><img src="../images/section2_Circles/Circle-2.svg" alt=""></div>
+                </div>
+                <div class="second-section__cirles-descriptions">
+                    <div class="second-section__cirles-descriptions-step">
+                        <div class="second-section__cirles-descriptions-title">Комплексные ит-решения</div>
+                        <div class="second-section__cirles-descriptions-text">для обзора корпоративных клиентов и госзаказчиков</div>
+                    </div>
+                    <div class="second-section__cirles-descriptions-step">
+                        <div class="second-section__cirles-descriptions-title">Опыт реализации</div>
+                        <div class="second-section__cirles-descriptions-text">сложных технологических проектов</div>
+                    </div>
+                    <div class="second-section__cirles-descriptions-step">
+                        <div class="second-section__cirles-descriptions-title">Целевые компетенции</div>
+                        <div class="second-section__cirles-descriptions-text">по внедрению отраслевых ИТ-решений</div>
+                    </div>
+                </div>
+                <div class="cookie-consent-banner" id="cookieBanner">
+                    <div class="cookie-content">
+                        <img src="../images/section2_Circles/cookie.svg" alt="">
+                        <div class="cookie-content__main">
+                            <p class="cookie-content__title">Для улучшения работы сайта мы используем cookie</p>
+                            <div class="cookie-content__link-button">
+                                <p class="cookie-content__link"><a href="#">Как это работает? </a></p>
+                                <div class="button-jump__wrapper">
+                                    <button class="accept-button">Хорошо</button>
+                                    <div class="accept-button__bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="second-section__annotation annotation">
                 <h3>// решение в области информационных технологий и безопасности</h3>
             </div>
 
             <div class="second-section__areas">
                 <div class="second-section__card area-card">
-                    <h2 class="area-card__name">
-                        инфраструктурные <br> ит-решения и системы
-                    </h2>
+                    <div  class="area-card__text-wrapper">
+                        <h2 class="area-card__name">
+                            инфраструктурные <br> ит-решения и системы
+                        </h2>
+                        <div class="area-card__text">Идейные высокие порядки, также сложившаяся структура организации позволяют выполнять сложные задания по разработке системы обучения кадров, согласно насущным расчетам.</div>
+                    </div>
+                    <div class="area-card__detail">
+                        <img src="../images/areaCards/IT_COOL_GUY.svg" alt="">
+                        <a href="">Подробнее</a>
+                    </div>
                 </div>
                 <div class="second-section__card area-card">
-                    <h2 class="area-card__name">
-                        решения по информационной безопасности
-                    </h2>
+                    <div class="area-card__text-wrapper">
+                        <h2 class="area-card__name">
+                            решения по информационной безопасности
+                        </h2>
+                        <div class="area-card__text">Идейные высокие порядки, также сложившаяся структура организации позволяют выполнять сложные задания по разработке системы обучения кадров, согласно насущным расчетам.</div>
+                    </div>
+                    <div class="area-card__detail">
+                        <img src="../images/areaCards/IB_COOL_GUY.svg" alt="">
+                        <a href="">Подробнее</a>
+                    </div>
                 </div>
                 <div class="second-section__card area-card">
-                    <h2 class="area-card__name">
-                        системы безопасности
-                    </h2>
+                    <div class="area-card__text-wrapper">
+                        <h2 class="area-card__name">
+                            системы безопасности
+                        </h2>
+                        <div class="area-card__text">
+                            Идейные высокие порядки, также сложившаяся структура организации позволяют выполнять сложные задания по разработке системы обучения кадров, согласно насущным расчетам.
+                        </div>
+                    </div>
+                    <div class="area-card__detail">
+                        <img src="../images/areaCards/SB_COOL_GUY_HOVER.svg" alt="">
+                        <a href="">Подробнее</a>
+                    </div>    
                 </div>
 
             </div>
@@ -103,7 +318,7 @@
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">15</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number number__100">15</span><span class="expert-card__percent">%</span>
                             </h2>
                             <div class="expert-card__title-wrapper"><span class="expert-card__title">системная
                                     интеграция</span></div>
@@ -112,7 +327,7 @@
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">15</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number number__100">15</span><span class="expert-card__percent">%</span>
                             </h2>
                             <div class="expert-card__title-wrapper"><span class="expert-card__title">проектные
                                     решения</span></div>
@@ -121,7 +336,7 @@
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">2</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number number__80">2</span><span class="expert-card__percent">%</span>
                             </h2>
                             <div class="expert-card__title-wrapper"><span class="expert-card__title">аутсорсинг и
                                     облачные сервисы</span></div>
@@ -130,12 +345,16 @@
                     <div class="third-section__expert-card expert-card">
                         <div class="expert-card__content">
                             <h2 class="expert-card__percent-and-number">
-                                <span class="expert-card__number">15</span><span class="expert-card__percent">%</span>
+                                <span class="expert-card__number number__100">15</span><span class="expert-card__percent">%</span>
                             </h2>
                             <div class="expert-card__title-wrapper"><span class="expert-card__title">услуги в области
                                     ит/иб</span></div>
                         </div>
                     </div>
+                    <svg width="286" height="286" viewBox="0 0 286 286" fill="none" xmlns="http://www.w3.org/2000/svg" id="circleLoader">
+                        <path id="outerCircle" d="M143 0C221.977 0 286 64.0233 286 143C286 221.977 221.977 286 143 286C64.0233 286 0 221.977 0 143C0 64.0233 64.0233 0 143 0ZM143 244.509C199.062 244.509 244.509 199.062 244.509 143C244.509 86.9381 199.062 41.491 143 41.491C86.9381 41.491 41.491 86.9381 41.491 143C41.491 199.062 86.9381 244.509 143 244.509Z" fill="#F5F5F5" />
+                        <path d="M99 99H186V186H99V99Z" fill="#F5F5F5" />
+                      </svg>
                 </div>
                 </div>
             </article>
@@ -205,7 +424,10 @@
                                 яркий пример континентально-европейского типа политической культуры, будут объективно
                                 рассмотрены соответствующими инстанциями.
                                 Кстати, действия представителей оппозиции ограничены исключительно образом мышления...</div>
-                            <button class="description-card__button">Продолжить</button>
+                                <div class="button-jump__wrapper">
+                                    <button class="description-card__button button-jump">Продолжить</button>
+                                    <div class="button-jump__bg"></div>
+                                </div>
                         </div>
                     </div>
                     <div class="fourth-section__description-card description-card">
@@ -244,7 +466,10 @@
                                 активизации. Задача организации, в особенности же сложившаяся структура организации
                                 представляет собой интересный эксперимент проверки
                                 существенных финансовых и административных условий...</div>
-                            <button class="description-card__button">Продолжить</button>
+                            <div class="button-jump__wrapper">
+                                <button class="description-card__button button-jump">Продолжить</button>
+                                <div class="button-jump__bg"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fourth-section__description-card description-card">
@@ -287,11 +512,14 @@
                                 предопределяет высокую востребованность экономической целесообразности принимаемых решений.
                                 Ясность нашей позиции очевидна: разбавленное изрядной долей эмпатии,
                             </div>
-                            <button class="description-card__button">Продолжить</button>
+                            <div class="button-jump__wrapper">
+                                <button class="description-card__button button-jump">Продолжить</button>
+                                <div class="button-jump__bg"></div>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="fourth-section__partners">
+                <article class="fourth-section__partners section-wrapper">
                     <div class="fourth-section__annotation annotation">
                         <h3>// партнеры</h3>
                     </div>
@@ -576,85 +804,121 @@
                         <textarea class = "contact-form__comment-input" name="comment" placeholder="Комментарий"></textarea>
                         <div class="contact-form__submit-wrapper">
                             <div class="contact-form__disclaimer">Нажимая на кнопку "Отправить" вы соглашаетесь на обработку внесенных вами данных</div>
-                            <button class="contact-form__submit-button description-card__button" type="submit">Отправить</button>
+                            <div class="button-jump__wrapper">
+                                <button class="contact-form__submit-button button-jump">Продолжить</button>
+                                <div class="button-jump__bg"></div>
+                            </div>
                         </div>
                     </form>
                 </div>
             </section>
             <div class="section-wrapper">
                 <footer class="footer">
-                    <div class="footer__inner">
+                    <div class="footer__inner container">
                         <div class="footer__top">
                             <a href="#">
                                 <img class="footer__logo" src="../images/LOGOVectorFooter.png" alt="">
                             </a>
                             <div class="footer__main">
                                 <div class="footer__list-wrapper">
-                                    <h5 class="footer__list-title">Решения</h5>
+                                    <h5 class="footer__list-title"><a href="">Решения</a></h5>
                                     <ul class="footer__list">
-                                        <li class="footer__list-item">информационная безопасность</li>
-                                        <li class="footer__list-item">Информационные технологии</li>
-                                        <li class="footer__list-item">Системы безопасности</li>
-                                        <li class="footer__list-item">Импортозамещение</li>
+                                        <li class="footer__list-item"><a href="">информационная безопасность</a></li>
+                                        <li class="footer__list-item"><a href="">Информационные технологии</a></li>
+                                        <li class="footer__list-item"><a href="">Системы безопасности</a></li>
+                                        <li class="footer__list-item"><a href="">Импортозамещение</a></li>
                                     </ul>
                                 </div>
                                 <div class="footer__list-wrapper">
-                                    <h5 class="footer__list-title">Продукты</h5>
+                                    <h5 class="footer__list-title"><a href="">Продукты</a></h5>
                                     <ul class="footer__list">
-                                        <li class="footer__list-item">Информационная безопасность</li>
-                                        <li class="footer__list-item">Информационные технологии</li>
-                                        <li class="footer__list-item">Системы безопасности</li>
+                                        <li class="footer__list-item"><a href="">Информационная безопасность</a></li>
+                                        <li class="footer__list-item"><a href="">Информационные технологии</a></li>
+                                        <li class="footer__list-item"><a href="">Системы безопасности</a></li>
                                     </ul>
                                 </div>
                                 <div class="footer__list-wrapper">
-                                    <h5 class="footer__list-title">О компании</h5>
+                                    <h5 class="footer__list-title"><a href="">О компании</a></h5>
                                     <ul class="footer__list">
-                                        <li class="footer__list-item">Новости</li>
-                                        <li class="footer__list-item">Вакансии</li>
-                                        <li class="footer__list-item">Контактная информация</li>
+                                        <li class="footer__list-item">
+                                            <a href="">Новости</a></li>
+                                        <li class="footer__list-item">
+                                            <a href="">Вакансии</a></li>
+                                        <li class="footer__list-item"><a href="">Контактная информация</a></li>
                                     </ul>
                                 </div>
                                 <div class="footer__list-wrapper">
-                                    <h5 class="footer__list-title">Экспертиза</h5>
+                                    <h5 class="footer__list-title"><a href="">Экспертиза</a></h5>
                                     <ul class="footer__list">
-                                        <li class="footer__list-item">Кейсы</li>
+                                        <li class="footer__list-item"><a href="">Кейсы</a></li>
                                     </ul>
                                 </div>
                                 <div class="footer__list-wrapper">
-                                    <h5 class="footer__list-title">Услуги</h5>
+                                    <h5 class="footer__list-title"><a href="">Услуги</a></h5>
                                     <ul class="footer__list">
                                     </ul>
                                 </div>
                                 <div class="footer__list-wrapper">
-                                    <h5 class="footer__list-title">Партнеры</h5>
+                                    <h5 class="footer__list-title"><a href="">Партнеры</a></h5>
                                     <ul class="footer__list">
                                     </ul>
                                 </div>
                             </div>
                             <div class="footer__contacts">
-                                <div><a href="tel:+74957414660">+7 495 741-46-60</a></div>
-                                <div><a href="mailto:info@bd-decurity.ru">info@bd-decurity.ru</a></div>
-                                <div>121170, Российская Федерация,
+                                <div class="footer__phone"><a href="tel:+74957414660">+7 495 741-46-60</a></div>
+                                <div class="footer__email"><a href="mailto:info@bd-decurity.ru">info@bd-decurity.ru</a></div>
+                                <div class="footer__adress">
+                                    <div>121170, Российская Федерация,</div>
                                     г. Москва, ул. 1812 года, д.10, к.2, кв.1</div>
-                                <div>
-                                    <a href="https://vk.com"><img src="../images/vkIcon.svg" alt=""></a>
-                                    <a href=""><img src="../images/tgIcon.svg" alt=""></a>
+                                <div class="footer__socials">
+                                    <a href="https://vk.com">
+                                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0082 28.2403C38.1015 26.4144 36.9068 24.7464 35.4698 23.3003C34.9892 22.7572 34.486 22.2345 33.9615 21.7337L33.8982 21.672C33.7034 21.4829 33.5112 21.2912 33.3215 21.097C35.2858 18.3655 36.9667 15.4409 38.3382 12.3687L38.3932 12.2453L38.4315 12.1153C38.6132 11.5103 38.8198 10.3603 38.0865 9.32033C37.3265 8.247 36.1115 8.05366 35.2965 8.05366H31.5515C30.7673 8.01793 29.992 8.23116 29.3364 8.66284C28.6808 9.09453 28.1785 9.72254 27.9015 10.457C27.0955 12.3764 26.0865 14.204 24.8915 15.9087V11.5203C24.8915 10.9537 24.8382 10.0037 24.2298 9.20366C23.5032 8.24366 22.4515 8.05366 21.7215 8.05366H15.7782C15.0026 8.03582 14.2499 8.31693 13.6759 8.83879C13.102 9.36064 12.7507 10.0833 12.6948 10.857L12.6898 10.932V11.007C12.6898 11.8153 13.0098 12.412 13.2665 12.787C13.3815 12.9553 13.5032 13.1087 13.5815 13.2053L13.5982 13.227C13.6815 13.3303 13.7365 13.3987 13.7915 13.4753C13.9382 13.672 14.1465 13.9787 14.2065 14.7687V17.2237C13.0135 15.2259 12.0352 13.1074 11.2882 10.9037L11.2748 10.867L11.2615 10.832C11.0582 10.3003 10.7332 9.527 10.0815 8.937C9.3215 8.24533 8.4215 8.05366 7.60317 8.05366H3.80317C2.97484 8.05366 1.9765 8.247 1.2315 9.032C0.499837 9.80533 0.416504 10.732 0.416504 11.222V11.4453L0.463171 11.662C1.51534 16.5466 3.68356 21.1215 6.79817 25.0287C8.22213 27.2742 10.1553 29.1524 12.4409 30.5111C14.7265 31.8698 17.3002 32.6706 19.9532 32.8487L20.0215 32.8537H20.0915C21.3015 32.8537 22.5632 32.7487 23.5115 32.117C24.7898 31.2637 24.8915 29.9553 24.8915 29.302V27.4053C25.2198 27.672 25.6265 28.0287 26.1248 28.5087C26.7282 29.112 27.2082 29.6353 27.6198 30.092L27.8398 30.3353C28.1598 30.692 28.4748 31.0437 28.7615 31.332C29.1215 31.6937 29.5665 32.092 30.1232 32.387C30.7282 32.7053 31.3632 32.8503 32.0365 32.8503H35.8382C36.6398 32.8503 37.7882 32.6603 38.5965 31.7237C39.4765 30.7037 39.4098 29.452 39.1332 28.5537L39.0832 28.392L39.0082 28.2403ZM29.4748 28.417C28.9583 27.8396 28.4264 27.276 27.8798 26.727L27.8748 26.722C25.6132 24.542 24.5582 24.1637 23.8115 24.1637C23.4132 24.1637 22.9748 24.207 22.6898 24.5637C22.5615 24.7338 22.4773 24.9331 22.4448 25.1437C22.4047 25.3882 22.3868 25.6359 22.3915 25.8837V29.302C22.3915 29.727 22.3215 29.9053 22.1248 30.0353C21.8632 30.2103 21.3048 30.352 20.1065 30.352C17.8302 30.1971 15.6231 29.5042 13.6668 28.3301C11.7105 27.1561 10.0607 25.5345 8.85317 23.5987L8.83984 23.577L8.82317 23.557C5.9217 19.9456 3.89958 15.7091 2.9165 11.182C2.92317 10.9653 2.96984 10.8337 3.0465 10.7537C3.12484 10.6703 3.3165 10.5537 3.80317 10.5537H7.60317C8.02484 10.5537 8.24484 10.647 8.40317 10.7887C8.57984 10.952 8.7365 11.227 8.92317 11.717C9.8565 14.4603 11.1165 17.027 12.3115 18.912C12.9082 19.8553 13.4948 20.6403 14.0248 21.1953C14.2898 21.472 14.5482 21.702 14.7965 21.8653C15.0348 22.022 15.3065 22.147 15.5865 22.147C15.7332 22.147 15.9048 22.1303 16.0698 22.0587C16.248 21.98 16.3947 21.8438 16.4865 21.672C16.6582 21.3587 16.7065 20.897 16.7065 20.292V14.6703C16.6182 13.307 16.2065 12.5387 15.8065 11.9937C15.7255 11.8847 15.6421 11.7774 15.5565 11.672L15.5348 11.6453C15.4638 11.559 15.3959 11.4701 15.3315 11.3787C15.2495 11.2767 15.2001 11.1524 15.1898 11.022C15.2029 10.8896 15.2661 10.7671 15.3665 10.6798C15.4669 10.5924 15.5969 10.5467 15.7298 10.552H21.7215C22.0648 10.552 22.1798 10.6353 22.2382 10.7137C22.3215 10.822 22.3915 11.047 22.3915 11.5203V19.067C22.3915 19.9637 22.8048 20.5703 23.4048 20.5703C24.0948 20.5703 24.5932 20.152 25.4632 19.282L25.4782 19.2653L25.4915 19.2503C27.4431 16.8708 29.0377 14.2196 30.2248 11.3803L30.2315 11.3603C30.3207 11.1095 30.4895 10.8947 30.7122 10.7487C30.9349 10.6028 31.1992 10.5337 31.4648 10.552H35.2982C35.8182 10.552 35.9882 10.6853 36.0448 10.7637C36.1032 10.847 36.1448 11.0253 36.0448 11.3753C34.6758 14.4359 32.9834 17.3413 30.9965 20.042L30.9832 20.062C30.7915 20.357 30.5798 20.6837 30.5498 21.057C30.5165 21.4603 30.6898 21.8253 30.9948 22.2187C31.2165 22.5453 31.6748 22.9937 32.1398 23.4487L32.1832 23.492C32.6698 23.9687 33.1982 24.4853 33.6215 24.9853L33.6332 24.997L33.6448 25.0103C34.9072 26.2695 35.9569 27.725 36.7532 29.3203C36.8798 29.7537 36.8032 29.977 36.7032 30.092C36.5882 30.2253 36.3298 30.3503 35.8398 30.3503H32.0365C31.7773 30.3566 31.5208 30.2964 31.2915 30.1753C31.0105 30.0119 30.7555 29.8074 30.5348 29.5687C30.2965 29.3303 30.0382 29.042 29.7215 28.6903L29.4765 28.417H29.4748Z"/>
+                                            </svg>
+                                            
+                                    </a>
+                                    <a href="">
+                                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M32.5875 5.12701C32.1862 5.15621 31.7924 5.25035 31.4213 5.40576H31.4163C31.06 5.54701 29.3663 6.25951 26.7913 7.33951L17.5638 11.2258C10.9425 14.0133 4.43378 16.7583 4.43378 16.7583L4.51128 16.7283C4.51128 16.7283 4.06253 16.8758 3.59378 17.197C3.30419 17.3813 3.05499 17.6224 2.86128 17.9058C2.63128 18.2433 2.44628 18.7595 2.51503 19.2933C2.62753 20.1958 3.21253 20.737 3.63253 21.0358C4.05753 21.3383 4.46253 21.4795 4.46253 21.4795H4.47253L10.5763 23.5358C10.85 24.4145 12.4363 29.6295 12.8175 30.8308C13.0425 31.5483 13.2613 31.997 13.535 32.3395C13.6675 32.5145 13.8225 32.6608 14.0088 32.7783C14.1056 32.8346 14.2088 32.8791 14.3163 32.9108L14.2538 32.8958C14.2725 32.9008 14.2875 32.9158 14.3013 32.9208C14.3513 32.9345 14.385 32.9395 14.4488 32.9495C15.415 33.242 16.1913 32.642 16.1913 32.642L16.235 32.607L19.8388 29.3258L25.8788 33.9595L26.0163 34.0183C27.275 34.5708 28.55 34.2633 29.2238 33.7208C29.9025 33.1745 30.1663 32.4758 30.1663 32.4758L30.21 32.3633L34.8775 8.45201C35.01 7.86201 35.0438 7.30951 34.8975 6.77326C34.7467 6.23054 34.3985 5.76377 33.9213 5.46451C33.5206 5.22091 33.0559 5.10332 32.5875 5.12701ZM32.4613 7.68951C32.4563 7.76826 32.4713 7.75951 32.4363 7.91076V7.92451L27.8125 31.587C27.7925 31.6208 27.7588 31.6945 27.6663 31.7683C27.5688 31.8458 27.4913 31.8945 27.085 31.7333L19.6975 26.0695L15.235 30.137L16.1725 24.1495L28.2425 12.8995C28.74 12.437 28.5738 12.3395 28.5738 12.3395C28.6088 11.772 27.8225 12.1733 27.8225 12.1733L12.6025 21.602L12.5975 21.577L5.30253 19.1208V19.1158L5.28378 19.112C5.29656 19.1078 5.30909 19.1028 5.32128 19.097L5.36128 19.077L5.40003 19.0633C5.40003 19.0633 11.9138 16.3183 18.535 13.5308C21.85 12.1345 25.19 10.7283 27.7588 9.64326C29.2822 9.00202 30.8072 8.36451 32.3338 7.73076C32.4363 7.69076 32.3875 7.68951 32.4613 7.68951Z" />
+                                            </svg>
+                                            
+                                    </a>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="footer__bottom"></div>
+                        <div class="footer__bottom">
+                            <div>© 2023 ООО «БС-БЕЗОПАСНОСТЬ»</div>
+                            <div>ИНН 7730561330 | ОГРН 5077746767995</div>
+                            <div>Политика конфиденциальности</div>
+                            <div>Разработано в 
+                                <a href="">
+                                    <svg width="45" height="11" viewBox="0 0 45 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.34818 8.15851H2.42981L1.71324 10.0239H0L3.96716 0.131836H4.04534L7.99947 10.0239H5.99961L5.34818 8.15851ZM4.76842 6.56872L3.92157 4.25116L3.03563 6.56872H4.76842Z" fill="#2D2650" />
+                                        <path d="M13.2105 2.103C12.8988 2.0782 12.5874 2.15708 12.3181 2.3291C12.2085 2.41541 12.1214 2.53112 12.0655 2.6649C12.0095 2.79867 11.9866 2.94591 11.9989 3.09221C12.0067 3.25613 12.0533 3.4151 12.1344 3.55373C12.2154 3.69236 12.328 3.80597 12.4614 3.88357C12.8428 4.15699 13.2542 4.37773 13.6861 4.54068C14.0609 4.68429 14.4193 4.87394 14.7544 5.10594C15.0574 5.33209 15.3073 5.63217 15.484 5.98209C15.691 6.41819 15.7897 6.9052 15.7706 7.39524C15.7738 7.89275 15.6445 8.38068 15.3984 8.80053C15.1523 9.22037 14.7998 9.5543 14.3831 9.76227C13.8774 10.0241 13.3211 10.1502 12.761 10.1297C12.2354 10.1302 11.7127 10.0444 11.2106 9.87532C10.692 9.71224 10.2029 9.45415 9.76448 9.11222L10.5592 7.64254C10.8753 7.89516 11.2244 8.0952 11.595 8.23607C11.9312 8.38196 12.2883 8.46326 12.6503 8.4763C12.9846 8.4846 13.315 8.39685 13.6079 8.22193C13.7389 8.13574 13.8445 8.01093 13.9126 7.86205C13.9807 7.71317 14.0083 7.54637 13.9922 7.38111C13.9922 6.89357 13.5688 6.46963 12.6894 6.11634C12.2586 5.93801 11.8387 5.73034 11.4321 5.49456C11.0863 5.2895 10.7878 5.00201 10.5592 4.65373C10.3018 4.23691 10.174 3.74177 10.1944 3.24059C10.1854 2.87218 10.2487 2.5059 10.3801 2.16603C10.5115 1.82617 10.708 1.52048 10.9566 1.26924C11.5027 0.736431 12.209 0.437537 12.9434 0.42842C13.4966 0.415931 14.0483 0.496981 14.5785 0.668656C15.0399 0.840151 15.478 1.07778 15.8814 1.37523L15.2299 2.78838C14.6206 2.37935 13.9261 2.14362 13.2105 2.103Z" fill="#2D2650" />
+                                        <path d="M24.0046 0.485337V2.32949H21.8679V10.0241H20.1286V2.32949H18.0766V0.485337H24.0046Z" fill="#2D2650" />
+                                        <path d="M26.8451 2.32949V0.485337H32.8512V2.32949H26.8451ZM26.8451 6.18032V4.33616H32.3822V6.15206L26.8451 6.18032ZM28.5779 8.24352H33.0141V10.0523H26.8451V8.21525L28.5779 8.24352Z" fill="#2D2650" />
+                                        <path d="M40.896 10.024C40.592 10.0946 40.2819 10.1301 39.971 10.13C39.1837 10.1366 38.4094 9.91195 37.7301 9.47999C37.2209 9.16099 36.7747 8.73627 36.4169 8.23012C36.0592 7.72397 35.7969 7.14631 35.645 6.53014C35.4932 5.91398 35.4548 5.27139 35.532 4.63912C35.6092 4.00685 35.8005 3.39728 36.0951 2.84525C36.4879 2.10376 37.0512 1.4854 37.7301 1.05055C38.4081 0.613242 39.1822 0.38242 39.971 0.38242C40.7598 0.38242 41.534 0.613242 42.2119 1.05055C42.8946 1.48731 43.4639 2.10481 43.8665 2.84525C44.1926 3.43718 44.3958 4.09903 44.4622 4.78478C44.5286 5.47053 44.4565 6.16374 44.2509 6.8162C44.1003 7.30685 43.8805 7.76925 43.5994 8.18696H45V10.024H40.896ZM37.6454 6.795C37.8851 7.24899 38.2283 7.62855 38.6421 7.89726C39.0612 8.17609 39.5445 8.32062 40.0362 8.31414C40.5128 8.31551 40.9802 8.17102 41.3846 7.89726C41.7858 7.62511 42.1155 7.2455 42.3422 6.795C42.5692 6.32395 42.6876 5.80031 42.6875 5.2688C42.6871 4.73564 42.5639 4.21103 42.3292 3.7426C42.1034 3.29778 41.7734 2.9255 41.3725 2.66345C40.9715 2.4014 40.5138 2.25886 40.0458 2.25025C39.5777 2.24165 39.1159 2.36728 38.707 2.61445C38.2981 2.86161 37.9566 3.22154 37.7171 3.65781C37.6995 3.68449 37.6842 3.71287 37.6715 3.7426C37.4308 4.20846 37.3072 4.7348 37.3132 5.2688C37.2983 5.80037 37.4129 6.32681 37.6454 6.795Z" fill="#2D2650" />
+                                      </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </footer>
             </div>
         </div>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="../js/animations.js"></script>
     <script src="../js/marquee.js"></script>
     <script src="../js/text.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/cookieBanner.js"></script>
+
+    <script src="../js/numberAnimation.js"></script>
     <script src="../js/contactFormMain.js"></script>
+    <script src="../js/backGroundAnimation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
 </body>
