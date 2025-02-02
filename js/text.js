@@ -15,7 +15,6 @@ document.querySelectorAll('.description-card__button').forEach(button => {
             text.classList.toggle("full2")
         }
         
-        // Меняем текст кнопки
         e.target.textContent = isOpen ? 'Продолжить' : 'Свернуть';
     });
 });

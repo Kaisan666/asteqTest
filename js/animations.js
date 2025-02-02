@@ -7,13 +7,13 @@ const eyeObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          eye.classList.add('visible'); // Показываем eye
+          eye.classList.add('visible');
         } else {
-          eye.classList.remove('visible'); // Скрываем eye
+          eye.classList.remove('visible'); 
         }
       });
     },
-    { threshold: 0.5 } // Сработает, когда 50% SVG видно
+    { threshold: 0.5 }
   );
   eyeObserver.observe(eyeSVG);
 
@@ -24,13 +24,13 @@ const cloudObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          cloud.classList.add('visible'); // Показываем eye
+          cloud.classList.add('visible'); 
         } else {
-          cloud.classList.remove('visible'); // Скрываем eye
+          cloud.classList.remove('visible');
         }
       });
     },
-    { threshold: 0.5 } // Сработает, когда 50% SVG видно
+    { threshold: 0.5 } 
   );
   cloudObserver.observe(cloudSVG);
 
@@ -42,14 +42,14 @@ const lockObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          middleLock.classList.add('visible'); // Показываем eye
-          endLock.classList.add('visible'); // Показываем eye
+          middleLock.classList.add('visible');
+          endLock.classList.add('visible');
         } else {
-          middleLock.classList.remove('visible'); // Скрываем eye
-          endLock.classList.remove('visible'); // Скрываем eye
+          middleLock.classList.remove('visible');
+          endLock.classList.remove('visible'); 
         }
       });
     },
-    { threshold: 0.5 } // Сработает, когда 50% SVG видно
+    { threshold: 0.5 }
   );
   lockObserver.observe(lockSVG);

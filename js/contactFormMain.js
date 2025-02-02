@@ -8,7 +8,6 @@ function showError(input, message) {
     const parent = input.parentElement;
     input.classList.add('invalid');
 
-    // Проверяем, есть ли уже сообщение об ошибке
     let errorText = parent.querySelector('.invalid-text');
     if (!errorText) {
         errorText = document.createElement('div');
@@ -25,7 +24,7 @@ function isValidEmail(email) {
 
 function isValidPhone(phone) {
     const re = /^\+7 \(\d{3}\) \d{3}-\d{4}$/;
-    return re.test(phone.trim()); // Убедимся, что лишние пробелы удалены
+    return re.test(phone.trim());
 }
 
 function formatPhoneNumber(value) {
@@ -55,18 +54,15 @@ contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let hasErrors = false;
 
-    // Удаляем предыдущие ошибки
     contactForm.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
     contactForm.querySelectorAll('.invalid-text').forEach(el => el.remove());
 
-    // Проверка ФИО
     if (fioInput.value.trim().length < 2) {
         showError(fioInput, 'Введите корректное ФИО');
         hasErrors = true;
     }
 
-    // Проверка телефона
-    const phoneValue = phoneInput.value.trim(); // Убедимся, что лишние пробелы удалены
+    const phoneValue = phoneInput.value.trim();
     if (phoneValue === '') {
         showError(phoneInput, 'Поле обязательно для заполнения');
         hasErrors = true;
@@ -75,7 +71,6 @@ contactForm.addEventListener("submit", (e) => {
         hasErrors = true;
     }
 
-    // Проверка email
     if (emailInput.value.trim() === '') {
         showError(emailInput, 'Поле обязательно для заполнения');
         hasErrors = true;
@@ -84,7 +79,6 @@ contactForm.addEventListener("submit", (e) => {
         hasErrors = true;
     }
 
-    // Если ошибок нет - можно отправлять форму
 
     console.log(commentInput.value)
     if (!hasErrors) {

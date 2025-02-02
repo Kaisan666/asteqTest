@@ -26,12 +26,10 @@ const swiper_logo = new Swiper('.swiper_wrapper-logo', {
     loop: true,
     spaceBetween : 64,
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.logo-button-next',
       prevEl: '.logo-button-prev',
