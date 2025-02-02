@@ -7,8 +7,8 @@ const swiper_news = new Swiper('.swiper_wrapper-news', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.news-button-next',
+    prevEl: '.news-button-prev',
   },
 
   breakpoints : {
@@ -22,7 +22,7 @@ const swiper_news = new Swiper('.swiper_wrapper-news', {
   slidesPerGroup: 3,
 });
 
-const swiper_logo = new Swiper('.swiper_wrapper2', {
+const swiper_logo = new Swiper('.swiper_wrapper-logo', {
     loop: true,
     spaceBetween : 64,
   
@@ -33,8 +33,8 @@ const swiper_logo = new Swiper('.swiper_wrapper2', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.logo-button-next',
+      prevEl: '.logo-button-prev',
     },
 
     breakpoints : {

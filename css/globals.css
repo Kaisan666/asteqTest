@@ -1,0 +1,35 @@
+:root{
+    --forbg: #fbfbfb;
+	--primelogobsbcolours-logoyellow: #dfdc01;
+	--primelogobsbcolours-logobluepurple: #2d2650;
+	--primelogobsbcolours-logodarkgrey: #2b2a28;
+	--primelogobsbcolours-ancettxtgrey: #555454;
+	--primelogobsbcolours-supportdarkyellow: #c9c601;
+	--primelogobsbcolours-softlightyellow: #ebe965;
+	--primelogobsbcolours-supportlightpurple: #4a399d;
+	--primelogobsbcolours-softlightpurple: #9283db;
+	--primelogobsbcolours-clearwhite: #fff;
+	--primelogobsbcolours-almostwhite: #f5f5f5;
+	--primelogobsbcolours-clearblack: #000;
+	--pantonebsb-pantoneyellow: #edec3f;
+	--pantonebsb-pantonedarkblue: #141b4d;
+	--pantonebsb-pantonecoolgrey: #b1b3b3;
+	--cmykforbsb-cmykrefyellow: #cf0;
+	--cmykforbsb-cmykrefblue: #00006c;
+	--cmykforbsb-cmykrefgrey: #999;
+
+
+    --font-family: "Handjet", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+    --third-family: "Press Start 2P", sans-serif;
+    --font3: "Eboy EXTAlpha", sans-serif;
+
+
+    --border-radius: 7px;
+
+    --container-width: 1110px;
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s;
+
+}

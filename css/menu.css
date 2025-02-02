@@ -5,13 +5,13 @@
 
 .menu{
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: 10;
     background: #333333;
     opacity: 0;
     visibility: hidden;
-    left: -8.5px;
+    left: 0px;
     top: 0;
     transition: opacity 0.5s ease, 
     visibility 0s ease 0.5s;
@@ -32,6 +32,7 @@
 .menu-header__inner{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 .menu-header{
     padding-top: 50px;
@@ -40,6 +41,7 @@
 
 .menu__input-search{
     position: relative;
+    margin-bottom: auto;
 }
 .menu__input-search path{
     position: absolute;

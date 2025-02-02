@@ -1,0 +1,154 @@
+
+.welcome-section__wrapper{
+    position: relative;
+    background: var(--primelogobsbcolours-logobluepurple);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.bgMAIN{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.header{
+    position: relative;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: baseline;
+    gap: 1000px;
+    z-index: 2;
+}
+
+.header__titles{
+    height: 50px;
+    overflow: hidden;
+    
+    
+}
+.header__titles img + img{
+    margin-top: 90px;
+    
+}
+
+.header__titles-inner{
+    animation: titlesAnimationHeader 7s infinite linear;
+    animation-delay: 2s;
+    height: max-content;
+}
+
+@keyframes titlesAnimationHeader {
+    0%, 20% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-50%);
+    }
+
+    60% {
+        transform: translateY(-50%);
+    }
+
+    80% {
+        transform: translateY(-100%);
+    }
+    90% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: steps(1, jump-end);
+    }
+}
+
+
+.header__logo-link{ 
+    height: 45px;
+    width: 45px;
+    }
+.header__logo-link img{
+        height: inherit;  
+        width: inherit;  
+  }
+.header__menu-button{
+background: none;
+outline: none;
+border: none;
+width: 35px;
+height: 35px;
+}
+
+.header__menu-button path{
+    fill: rgba(245, 245, 245, 0.2);
+} 
+.header__menu-button:hover path{
+    fill: var(--primelogobsbcolours-almostwhite);
+} 
+
+.header__menu-button img{
+    width: 35px;
+    height: 35px;
+    }
+.welcome-section__text-wrapper{
+    position: relative;
+    z-index: 2;
+}
+.welcome-section__title{
+    margin-top: 115px;
+    font-family: var(--third-family);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    h1{
+        -webkit-text-stroke: 4px #2D2650;
+        font-family: var(--third-family);
+font-weight: 400;
+font-size: 80px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+background: linear-gradient(184deg, #2d2650 35.93%, #dfdc01 35.94%);
+background-clip: text;
+color: transparent;
+width: 332px;
+    }
+    h2{
+        color: transparent;
+        font-family: var(--third-family);
+font-weight: 400;
+font-size: 40px;
+line-height: 50%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+-webkit-text-stroke: 5px var(--primelogobsbcolours-clearwhite);
+/* paint-order: stroke fill;
+ */
+ 
+    }
+    
+}
+.welcome-section__description{
+margin-top: 59px;
+position: relative;
+}
+.welcome-section__description h3{
+
+    width: 665px;
+    word-break: break-all;
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 30px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--primelogobsbcolours-logobluepurple);
+}
