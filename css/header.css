@@ -1,12 +1,28 @@
 
 .welcome-section__wrapper{
     position: relative;
-    background: var(--primelogobsbcolours-logobluepurple);
+    background: var(--primelogobsbcolours-supportlightpurple);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     overflow: hidden;
+}
+.welcome-section__wrapper::after{
+    content: url("../images/header/LOGOVector.svg");
+    padding-top: 15px;
+    padding-left: 19px;
+    position: absolute;
+    bottom: -33.25%;
+    right: -23%;
+    background: url("../images/header/LOGOVectorShadow.svg");
+    background-size: 100%;
+    background-position: 0px 0px;
+    width: 916px;
+    height: 916px;
+    background-repeat: no-repeat;
+    z-index: 10;
+
 }
 .bgMAIN{
     width: 100%;
