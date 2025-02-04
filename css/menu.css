@@ -17,6 +17,21 @@
     visibility 0s ease 0.5s;
 
 }
+.menu::after{
+    content: url("../images/Menu/rotatingCircle.svg");
+    position: absolute;
+    left: 68.5%;
+    top: 50%;
+    animation: rotateMenuCircle 25s linear infinite;
+}
+@keyframes rotateMenuCircle{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .menu.active{
     
@@ -137,8 +152,11 @@ white-space: nowrap;
     margin-top: 16px;
 }
 
-.menu__list-item+.footer__list-item{
+.menu__list-item+.menu__list-item{
     margin-top: 12px;
+}
+.menu__list-item:last-child{
+    margin-bottom: 24px;
 }
 
 
@@ -156,13 +174,14 @@ white-space: nowrap;
 .menu-card{
     display: flex;
     flex-direction: column;
+    margin-top: 55px;
     gap: 24px;
     padding: 40px 54px;
-width: 568px;
-height: 219px;
-backdrop-filter: blur(20px);
-box-shadow: 0 1px 24px -1px rgba(0, 0, 0, 0.1);
-background: linear-gradient(137deg, rgba(223, 220, 1, 0.8) 0%, rgba(74, 57, 157, 0.7) 100%);
+    width: 568px;
+    height: 219px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 24px -1px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(137deg, rgba(223, 220, 1, 0.8) 0%, rgba(74, 57, 157, 0.7) 100%);
 }
 .menu-card h2{
     font-family: var(--font-family);
@@ -222,16 +241,18 @@ letter-spacing: 0.05em;
 color: var(--primelogobsbcolours-softlightyellow);
 }
 .menu-card{
-    margin-top: 22px;
+    
 }
 .menu__contacts{
+    margin-top: 15px;
     position: relative;
     display: grid;
     grid-template-rows: 40px 40px;
     grid-template-columns: 203px 221px;
     column-gap: 146px;
     width: 570px;
-height: 79px;
+    height: 79px;
+    row-gap: 12px;
 }
 .menu__phone a{
     grid-column: 1;
