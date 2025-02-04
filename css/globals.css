@@ -28,6 +28,7 @@
     --border-radius: 7px;
 
     --container-width: 1110px;
+    --container-width-mobile: 328px;
     --container-padding-x: 15px;
 
     --transition-duration: 0.2s;
