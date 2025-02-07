@@ -190,19 +190,17 @@
         content: url("../images/header/BSBmobile.svg");
     }   
     .welcome-section__wrapper::after{
-        content: url("../images/header/LOGOVector.svg");
+        content: url("../images/header/LOGOVectorMobile.svg");
         padding-top: 15px;
         padding-left: 19px;
         position: absolute;
         /* bottom: -33.25%; */
         bottom: 0;
         right: 0;
-        transform: translate(450px, 450px);
+        transform: translate(250px,250px );
         background: url("../images/header/LOGOVectorShadow.svg");
-        background-size: 100%;
+        background-size: 547px;
         background-position: 0px 0px;
-        width: 916px;
-        height: 916px;
         background-repeat: no-repeat;
         z-index: 3;
     
@@ -286,8 +284,8 @@
     
     
     .header__logo-link{ 
-        height: 45px;
-        width: 45px;
+        height: 36px;
+        width: 36px;
         }
     .header__logo-link img{
             height: inherit;  
@@ -297,8 +295,8 @@
     background: none;
     outline: none;
     border: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     }
     
     .header__menu-button path{
@@ -308,9 +306,9 @@
         fill: var(--primelogobsbcolours-almostwhite);
     } 
     
-    .header__menu-button img{
-        width: 35px;
-        height: 35px;
+    .header__menu-button svg{
+        width: 30px;
+        height: 30px;
         }
     .welcome-section__text-wrapper{
         position: relative;
