@@ -1,6 +1,5 @@
 const swiper_news = new Swiper('.swiper_wrapper-news', {
   loop: true,
-  spaceBetween : 30,
 
   pagination: {
     el: '.swiper-pagination',
@@ -13,18 +12,21 @@ const swiper_news = new Swiper('.swiper_wrapper-news', {
 
   breakpoints : {
       0 : {
-          slidesPerView : 2
+          slidesPerView : 1.4,
+          slidesPerGroup: 1,
+          spaceBetween : 12,
       },
       1440 : {
-          slidesPerView : 3
+          slidesPerView : 3,
+          spaceBetween : 30,
+          slidesPerGroup: 3,
       },
   },
-  slidesPerGroup: 3,
+  
 });
 
 const swiper_logo = new Swiper('.swiper_wrapper-logo', {
     loop: true,
-    spaceBetween : 64,
   
     pagination: {
       el: '.swiper-pagination',
@@ -37,9 +39,15 @@ const swiper_logo = new Swiper('.swiper_wrapper-logo', {
 
     breakpoints : {
         0 : {
-            slidesPerView : 6
+            spaceBetween : 24,
+            slidesPerView : 3.7,
+            slidesPerGroup: 3,
+        },
+        1440 : {
+            spaceBetween : 64,
+            slidesPerView : 6,
+            slidesPerGroup: 6
         },
     },
-    slidesPerGroup: 6,
   });
 

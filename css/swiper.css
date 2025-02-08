@@ -1,5 +1,6 @@
 @import url("globals.css");
-.arrow-prev,
+@media (width >= 1440px) {
+    .arrow-prev,
 .arrow-next{
     position: absolute;
     z-index: 10;
@@ -26,4 +27,36 @@
 }
 .arrow-prev{
     left: 0;
+}
+}
+@media (width < 1440px) {
+.arrow-prev,
+.arrow-next{
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    display: none;
+}
+.arrow-prev path,
+.arrow-next path{
+    fill: #B1B3B3;
+    transition: fill 0.25s ease;
+}
+.arrow-prev:hover path,
+.arrow-next:hover path{
+    fill: var(--primelogobsbcolours-softlightyellow);
+    transition: fill 0.25s ease;
+}
+.arrow-prev:active path,
+.arrow-next:active path{
+    fill: var(--cmykforbsb-cmykrefgrey);
+    transition: fill 0.25s ease;
+}
+.arrow-next{
+    transform: rotate(180deg);
+    right: 0%;
+}
+.arrow-prev{
+    left: 0;
+}
 }

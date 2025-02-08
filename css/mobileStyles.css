@@ -420,14 +420,10 @@ letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 
-  .third-section__tech-annotation {
-    margin-top: 92px;
-  }
 
   .section-wrapper {
-    margin-top: 92px;
+    margin-top: 64px;
   }
-
   .scroller {
     max-width: 100vw;
   }
@@ -435,7 +431,7 @@ letter-spacing: 0.05em;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 144px;
+    gap: 76px;
   }
   .scroller[data-animated="true"] {
     overflow: hidden;
@@ -465,10 +461,11 @@ letter-spacing: 0.05em;
   }
 
   .scroller__icon {
-    height: 100px;
+    height: 55px;
+    width: 55px;
   }
   .scroller__text {
-    height: 48px;
+    height: 18px;
   }
 
   @keyframes scroll {
@@ -480,8 +477,8 @@ letter-spacing: 0.05em;
   .scroller-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 152px;
-    margin-top: 56px;
+    gap: 12px;
+    margin-top: 24px;
   }
 
   .fourth-section {
@@ -557,41 +554,40 @@ letter-spacing: 0.05em;
   .fourth-section__descriptions {
     display: flex;
     flex-direction: column;
-    gap: 76px;
+    gap: 40px;
   }
   .description-card {
     display: flex;
-    gap: 44px;
+    flex-direction: column;
+    gap: 24px;
   }
-  .description-card:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .description-card__text-wrapper {
-    width: 641px;
+  .description-card svg{
+    width: 95px;
+    height: 95px;
+    align-self: center;
   }
   .description-card__title {
     font-family: var(--font-family);
     font-weight: 900;
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--primelogobsbcolours-logobluepurple);
-    height: 80px;
   }
   .description-card__text {
-    width: 635px;
+    width: 328px;
     word-break: normal;
     text-align: left;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logodarkgrey);
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 7;
     overflow: hidden;
-    max-height: 100px;
+    max-height: 151px;
     margin: 24px 0 48px;
     transition: max-height 0.5s ease;
   }
@@ -609,7 +605,7 @@ letter-spacing: 0.05em;
   .button-jump {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-supportlightpurple);
     padding: 10px 40px;
@@ -645,19 +641,26 @@ letter-spacing: 0.05em;
   }
 
   .swiper-logo {
-    width: 1228px;
-    height: 175px;
+    width: 360px;
+  }
+.swiper-slide__link{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .swiper_wrapper-logo {
-    max-width: 1110px;
-    overflow: hidden;
-    margin: 0 auto;
+    max-width: 360px;
+    /* overflow: hidden; */
+  }
+  .swiper-slide__logo{
+    width: 71px;
+    height: 71px;
   }
   .swiper-slide__text {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 12px;
     letter-spacing: 0.05em;
     text-align: center;
     color: var(--primelogobsbcolours-almostwhite);
@@ -674,13 +677,6 @@ letter-spacing: 0.05em;
   .swiper-slide__content:hover {
     filter: none;
   }
-
-  .news-section {
-    padding-top: 255px;
-    padding-bottom: 255px;
-    background-repeat: no-repeat;
-    background-position: 66% 50%;
-  }
   .news-section {
     position: relative;
   }
@@ -688,10 +684,9 @@ letter-spacing: 0.05em;
   .news-card {
     border: 5px solid var(--primelogobsbcolours-almostwhite);
     border-radius: 14px;
-    width: 350px;
-    height: 270px;
+    width: 242px;
+    height: 180px;
     padding: 20px 0;
-
     background: url("../images/image\ 4.png");
     box-shadow: inset 0 -130px 40px 0 rgba(0, 0, 0, 0.6);
     background-size: 412px 273px;
@@ -706,17 +701,18 @@ letter-spacing: 0.05em;
     margin: 0 17px 0 30px;
     justify-content: space-between;
   }
+  
   .news-card__date {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-almostwhite);
   }
   .news-card__title {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 0.05em;
   }
   .news-card__title-visible {
@@ -726,11 +722,7 @@ letter-spacing: 0.05em;
   }
 
   .news-card__circle {
-    width: 67px;
-    height: 64px;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease, visibility 0 ease 0.5s;
+    display: none;
   }
   .news-card__main {
     margin: 0 40px 0 30px;
@@ -781,24 +773,29 @@ letter-spacing: 0.05em;
     animation: rotateCircle 5s linear infinite 1s;
   }
   .news-article {
-    width: 1228px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    width: 360px;
+    height: 267px;
     position: relative;
     margin: 0 auto;
   }
   .news-article::before {
-    content: url("../images/NewsBG.svg");
+    content: url("../images/NewsBGMobile.svg");
     position: absolute;
-    bottom: -80%;
+    bottom: 0%;
+    left: 0;
+    transform: translateX(-15px);
     left: 4.5%;
     z-index: 1;
   }
   .swiper-news {
-    width: 1228px;
+    width: 360px;
     height: 270px;
-    align-items: center;
+
   }
   .swiper_wrapper-news {
-    max-width: 1110px;
+    max-width: 360px;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
@@ -807,13 +804,13 @@ letter-spacing: 0.05em;
   .news-card__text {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-almostwhite);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    width: 280px;
+    width: 182px;
     word-break: normal;
     overflow: hidden;
   }
@@ -838,63 +835,64 @@ letter-spacing: 0.05em;
 
   .contact-form-main {
     border-radius: 7px;
-    padding: 40px 55px;
-    width: 1110px;
-    height: 625px;
+    padding: 24px 16px;
+    width: 328px;
+    height: 448px;
     backdrop-filter: blur(20px);
     box-shadow: 0 1px 24px -1px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 12px;
   }
   .contact-form-main h3 {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 12px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logobluepurple);
   }
   .contact-form-main input::placeholder {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-ancettxtgrey);
   }
 
   .contact-form__fio-input {
-    padding: 20px 0px 20px 20px;
     border: 2px solid var(--cmykforbsb-cmykrefgrey);
     border-radius: 7px;
-    padding: 20px 0px 20px 20px;
-    height: 58px;
-    width: 1000px;
+    padding: 12px 24px;
+    width: 296px;
+    height: 40px;
   }
 
   .contact-form__email-phone-wrapper {
     display: flex;
-    gap: 36px;
+    flex-direction: column;
+    gap: 12px;
     justify-content: space-between;
   }
   .contact-form__email-input,
   .contact-form__phone-input {
     border: 2px solid var(--cmykforbsb-cmykrefgrey);
     border-radius: 7px;
-    padding: 20px 0px 20px 20px;
-    width: 482px;
-    height: 58px;
+    padding: 12px 24px;
+    width: 296px;
+    height: 40px;
   }
   .contact-form__comment-input {
     border: 2px solid var(--cmykforbsb-cmykrefgrey);
     border-radius: 7px;
-    padding: 20px 0px 20px 20px;
-    width: 1000px;
-    height: 202px;
+    padding: 12px 24px;
+    width: 296px;
+    height: 120px;
   }
 
   .contact-form__submit-wrapper {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 12px;
     justify-content: end;
   }
   .contact-form__disclaimer {
@@ -902,11 +900,12 @@ letter-spacing: 0.05em;
     font-weight: 400;
     font-size: 10px;
     letter-spacing: 0.05em;
-    text-align: right;
     color: var(--cmykforbsb-cmykrefgrey);
-    width: 160px;
-    height: 41px;
-    text-align: right;
+  }
+  .contact-form__submit-button{
+    padding: 10px 40px;
+width: 143px;
+height: 38px;
   }
 
   .invalid {
@@ -918,12 +917,6 @@ letter-spacing: 0.05em;
     color: #ff0000;
     font-size: 12px;
     margin-top: 5px;
-  }
-  .contact-form__fio-input-wrapper,
-  .contact-form__phone-input-wrapper,
-  .contact-form__email-input-wrapper {
-    position: relative;
-    margin-bottom: 15px;
   }
 
   .footer {
