@@ -336,10 +336,10 @@
   }
   .area-card__text {
     font-family: var(--second-family);
-font-weight: 400;
-font-size: 16px;
-letter-spacing: 0.05em;
-color: var(--primelogobsbcolours-clearblack);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: var(--primelogobsbcolours-clearblack);
   }
 
   .area-card__detail {
@@ -372,9 +372,9 @@ color: var(--primelogobsbcolours-clearblack);
   }
   .expert-card__percent-and-number {
     font-family: var(--font3);
-font-weight: 400;
-font-size: 80px;
-letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logoyellow);
   }
   .expert-card__percent {
@@ -419,7 +419,6 @@ letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logobluepurple);
     text-transform: uppercase;
   }
-
 
   .section-wrapper {
     margin-top: 64px;
@@ -561,7 +560,7 @@ letter-spacing: 0.05em;
     flex-direction: column;
     gap: 24px;
   }
-  .description-card svg{
+  .description-card svg {
     width: 95px;
     height: 95px;
     align-self: center;
@@ -643,8 +642,8 @@ letter-spacing: 0.05em;
   .swiper-logo {
     width: 360px;
   }
-.swiper-slide__link{
-  display: flex;
+  .swiper-slide__link {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -653,7 +652,7 @@ letter-spacing: 0.05em;
     max-width: 360px;
     /* overflow: hidden; */
   }
-  .swiper-slide__logo{
+  .swiper-slide__logo {
     width: 71px;
     height: 71px;
   }
@@ -701,7 +700,7 @@ letter-spacing: 0.05em;
     margin: 0 17px 0 30px;
     justify-content: space-between;
   }
-  
+
   .news-card__date {
     font-family: var(--second-family);
     font-weight: 400;
@@ -792,7 +791,6 @@ letter-spacing: 0.05em;
   .swiper-news {
     width: 360px;
     height: 270px;
-
   }
   .swiper_wrapper-news {
     max-width: 360px;
@@ -902,10 +900,10 @@ letter-spacing: 0.05em;
     letter-spacing: 0.05em;
     color: var(--cmykforbsb-cmykrefgrey);
   }
-  .contact-form__submit-button{
+  .contact-form__submit-button {
     padding: 10px 40px;
-width: 143px;
-height: 38px;
+    width: 143px;
+    height: 38px;
   }
 
   .invalid {
@@ -926,17 +924,48 @@ height: 38px;
 
   .footer__top {
     display: flex;
-    gap: 42px;
+    flex-direction: column;
+    gap: 24px;
     padding-bottom: 42px;
+  }
+  .footer__logo-link {
+    display: none;
+  }
+  .footer__list-wrapper .footer__list {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .footer__list-wrapper.active .footer__list {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 1.5s;
+  }
+  .footer__list-wrapper .footer__list-button {
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+  }
+  .footer__list-wrapper.active .footer__list-button {
+    transform: rotate(-90deg);
+    transition: transform 0.5s;
   }
 
   .footer__list-title a {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logobluepurple);
     position: relative;
+  }
+  .footer__list-title {
+    position: relative;
+  }
+  .footer__list-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .footer__list-title a::before {
     content: "";
@@ -996,16 +1025,18 @@ height: 38px;
   }
 
   .footer__main {
-    display: grid;
-    grid-template-columns: 214px 214px 176px;
-    column-gap: 50.5px;
-    row-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-
+  .footer__phone {
+    padding: 11px 0;
+    grid-row: 1;
+  }
   .footer__phone a {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logobluepurple);
     position: relative;
@@ -1013,13 +1044,16 @@ height: 38px;
   }
   .footer__email {
     margin-top: 12px;
+    padding: 13.5px 0;
+    grid-row: 2;
   }
   .footer__email a {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 12px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logobluepurple);
+
     position: relative;
   }
   .footer__phone a::before {
@@ -1069,9 +1103,18 @@ height: 38px;
     margin-bottom: 16px;
   }
   .footer__contacts {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 12px 0px;
     align-items: flex-end;
+  }
+  .footer__contacts .footer__adress {
+    display: none;
+  }
+  .footer__socials{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto 0 auto auto;
   }
   .footer__socials a:first-child {
     margin-right: 15px;
