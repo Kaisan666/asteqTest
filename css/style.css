@@ -3,6 +3,7 @@
 @import url("fonts.css");
 @import url("swiper.css");
 @import url("popupForm.css");
+@import url('formNotifications.css');
 @media (width >= 1440px) {
 html{
     max-width: 100vw;

@@ -13,6 +13,15 @@
 </head>
 
 <body>
+    
+    <div class="form-notification-error">
+        <img src="images/notifications/Error.svg" alt="ошибка отправки">
+        <div>Произошла ошибка.<br>Повторите попытку позже.</div>
+    </div>
+    <div class="form-notification-success">
+        <img src="images/notifications/Success.svg" alt="успех отправки">
+        <div>Ваша заявка успешно отправлена!</div>
+    </div>
     <div class="menu">
         <div class="popup-form">
             <div class="popup-form__header">
@@ -78,7 +87,9 @@
         <div class="menu-content container">
             <div class="menu__main">
                 <div class="menu__list-wrapper">
-                    <h5 class="menu__list-title"><a href="">Решения</a></h5>
+                    <h5 class="menu__list-title">
+                        <img src="images/FooterListMobileArrow.svg" class="menu__list-button" alt="">
+                        <a href="">Решения</a></h5>
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="">информационная безопасность</a></li>
                         <li class="menu__list-item"><a href="">Информационные технологии</a></li>
@@ -87,7 +98,9 @@
                     </ul>
                 </div>
                 <div class="menu__list-wrapper">
-                    <h5 class="menu__list-title"><a href="">Продукты</a></h5>
+                    <h5 class="menu__list-title">
+                        <img src="images/FooterListMobileArrow.svg" class="menu__list-button" alt="">
+                        <a href="">Продукты</a></h5>
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="">Информационная безопасность</a></li>
                         <li class="menu__list-item"><a href="">Информационные технологии</a></li>
@@ -95,7 +108,9 @@
                     </ul>
                 </div>
                 <div class="menu__list-wrapper">
-                    <h5 class="menu__list-title"><a href="">О компании</a></h5>
+                    <h5 class="menu__list-title">
+                        <img src="images/FooterListMobileArrow.svg" class="menu__list-button" alt="">
+                        <a href="">О компании</a></h5>
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a href="">Новости</a></li>
@@ -105,14 +120,18 @@
                     </ul>
                 </div>
                 <div class="menu__list-wrapper">
-                    <h5 class="menu__list-title"><a href="">Экспертиза</a></h5>
+                    <h5 class="menu__list-title">
+                        <img src="images/FooterListMobileArrow.svg" class="menu__list-button" alt="">
+                        <a href="">Экспертиза</a></h5>
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="">Кейсы</a></li>
                         <li class="menu__list-item"><a href="">Отрасли</a></li>
                     </ul>
                 </div>
                 <div class="menu__list-wrapper">
-                    <h5 class="menu__list-title"><a href="">Услуги</a></h5>
+                    <h5 class="menu__list-title">
+                        <img src="images/FooterListMobileArrow.svg" class="menu__list-button" alt="">
+                        <a href="">Услуги</a></h5>
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="">Внедрение</a></li>
                         <li class="menu__list-item"><a href="">Разработка</a></li>
@@ -822,12 +841,12 @@
                 <div class="form_wrapper">
                     <form class="contact-form-main">
                         <h3>ЗАПОЛНИТЕ АНКЕТУ И МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИИ ТРЕХ ДНЕЙ:</h3>
-                        <div class="contact-form__fio-input-wrapper">
+                        <div class="contact-form__fio-input-wrapper form-input-wrapper">
                             <input class = "contact-form__fio-input" type="text" name="FIO" placeholder="ФИО"></div>
                         <div class="contact-form__email-phone-wrapper">
-                            <div class="contact-form__phone-input-wrapper">
+                            <div class="contact-form__phone-input-wrapper form-input-wrapper">
                                 <input class = "contact-form__phone-input" type="tel"  name="phone" placeholder="Номер телефона"></div>
-                            <div class="contact-form__email-input-wrapper">
+                            <div class="contact-form__email-input-wrapper form-input-wrapper">
                                 <input class = "contact-form__email-input" type="email" name="email" placeholder="E-mail"></div>
                         </div>
                         <textarea class = "contact-form__comment-input" name="comment" placeholder="Комментарий"></textarea>

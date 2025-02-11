@@ -88,19 +88,46 @@
 .menu__input-search input::placeholder{
     font-family: var(--second-family);
 font-weight: 400;
-font-size: 14px;
+font-size: 12px;
 letter-spacing: 0.05em;
 color: var(--cmykforbsb-cmykrefgrey);
 }
+.menu__list-title {
+    position: relative;
+  }
+  .menu__list-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+.menu__list-wrapper .menu__list {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .menu__list-wrapper.active .menu__list {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 1.5s;
+  }
+  .menu__list-wrapper .menu__list-button {
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+  }
+  .menu__list-wrapper.active .menu__list-button {
+    transform: rotate(-90deg);
+    transition: transform 0.5s;
+  }
 
 
 .menu__list-title a{
     font-family: var(--font-family);
-font-weight: 700;
-font-size: 25px;
-letter-spacing: 0.05em;
-color: var(--primelogobsbcolours-logobluepurple);
-position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: var(--primelogobsbcolours-logobluepurple);
+    position: relative;
 }
 .menu__list-title a::before{
     content:  "";
@@ -163,14 +190,13 @@ white-space: nowrap;
 
 
 .menu-content{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .menu__main{
     
-    display: grid;
-    grid-template-columns: repeat(3, 276px );
-    column-gap: 108.5px;
-    row-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .menu-card{

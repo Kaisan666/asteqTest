@@ -6,8 +6,8 @@ const commentInput = contactForm.querySelector(".contact-form__comment-input");
 
 function showError(input, message) {
     const parent = input.parentElement;
+    parent.classList.add("invalid-icon")
     input.classList.add('invalid');
-
     let errorText = parent.querySelector('.invalid-text');
     if (!errorText) {
         errorText = document.createElement('div');
@@ -55,6 +55,7 @@ contactForm.addEventListener("submit", (e) => {
     let hasErrors = false;
 
     contactForm.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
+    contactForm.querySelectorAll('.invalid-icon').forEach(el => el.classList.remove('invalid-icon'));
     contactForm.querySelectorAll('.invalid-text').forEach(el => el.remove());
 
     if (fioInput.value.trim().length < 2) {
@@ -80,14 +81,33 @@ contactForm.addEventListener("submit", (e) => {
     }
 
 
-    console.log(commentInput.value)
     if (!hasErrors) {
-        console.log(fioInput.value)
-        console.log(phoneInput.value)
-        console.log(emailInput.value)
-        console.log(commentInput.value)
-        
+        const formData = new FormData(contactForm)
+        try{
+        const sendData = async(data) => {
+            const response = await fetch("https://dummyjson.com/test", 
+            {method : "POST",
+                body : data
+            })
+            console.log(response.json().data)
+        }
+        sendData()
+        const successNotification = document.querySelector(".form-notification-success")
+        successNotification.classList.add("active")
+        setTimeout(()=>{
+            successNotification.classList.remove("active")
+        }, 2500)
         contactForm.reset();
-        alert('Форма успешно отправлена!');
+    
+        
+    }
+    catch(e) {
+        console.log(e)
+        const errorNotification = document.querySelector(".form-notification-error")
+        errorNotification.classList.add("active")
+        setTimeout(()=>{
+            errorNotification.classList.remove("active")
+        }, 2500)
+    }
     }
 });

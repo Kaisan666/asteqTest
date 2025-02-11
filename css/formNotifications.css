@@ -1,0 +1,67 @@
+@media (width >= 1440px) {
+  .form-notification-success {
+    position: fixed;
+  }
+  .form-notification-error {
+
+  }
+}
+@media (width < 1440px) {
+  .form-notification-success {
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    gap: 24px;
+    transform: translateY(100px);
+    transition: transform 0.5s ease;
+    align-items: center;
+    z-index: 10;
+    border-radius: 7px;
+padding: 16px;
+width: 260px;
+height: 66px;
+backdrop-filter: blur(20px);
+box-shadow: 0 1px 24px -1px rgba(0, 0, 0, 0.1);
+  }
+  .form-notification-success.active {
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+  }
+  .form-notification-success div {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--primelogobsbcolours-logobluepurple);
+  }
+
+  .form-notification-error {
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    gap: 24px;
+     transform: translateY(100px);
+     transition: transform 0.5s ease;   
+    align-items: center;
+    z-index: 10;
+    border-radius: 7px;
+padding: 16px;
+width: 260px;
+height: 66px;
+backdrop-filter: blur(20px);
+box-shadow: 0 1px 24px -1px rgba(0, 0, 0, 0.1);
+  }
+  .form-notification-error.active{
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+  }
+  .form-notification-error div{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--primelogobsbcolours-logobluepurple);
+  }
+}

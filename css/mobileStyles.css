@@ -864,6 +864,18 @@
     width: 296px;
     height: 40px;
   }
+  .form-input-wrapper{
+    position: relative;
+  }
+  .form-input-wrapper.invalid-icon::after{
+    content: url("../images/errorFormInput.svg");
+    position: absolute;
+    right: 10%;
+    top: 0;
+    transform: translateY(50%);
+
+
+  }
 
   .contact-form__email-phone-wrapper {
     display: flex;
