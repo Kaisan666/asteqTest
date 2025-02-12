@@ -17,24 +17,9 @@
     top: 0;
     transition: opacity 0.5s ease, 
     visibility 0s ease 0.5s;
+    overflow: scroll;
 
 }
-.menu::after{
-    content: url("../images/Menu/rotatingCircle.svg");
-    position: absolute;
-    left: 68.5%;
-    top: 50%;
-    animation: rotateMenuCircle 25s linear infinite;
-}
-@keyframes rotateMenuCircle{
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .menu.active{
     
     opacity: 1;
@@ -52,7 +37,7 @@
     align-items: baseline;
 }
 .menu-header{
-    padding-top: 50px;
+    padding-top: 18px;
     position: relative;
 }
 
@@ -190,7 +175,10 @@ white-space: nowrap;
 
 
 .menu-content{
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
+    height: 100%;
 }
 .menu__main{
     
@@ -202,11 +190,13 @@ white-space: nowrap;
 .menu-card{
     display: flex;
     flex-direction: column;
-    margin-top: 55px;
+    /* margin-top: 55px; */
+    margin-top: auto;
     gap: 24px;
-    padding: 40px 54px;
-    width: 568px;
-    height: 219px;
+    border-radius: 7px;
+    padding: 16px;
+    width: 328px;
+    height: 159px;
     backdrop-filter: blur(20px);
     box-shadow: 0 1px 24px -1px rgba(0, 0, 0, 0.1);
     background: linear-gradient(137deg, rgba(223, 220, 1, 0.8) 0%, rgba(74, 57, 157, 0.7) 100%);
@@ -214,15 +204,15 @@ white-space: nowrap;
 .menu-card h2{
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     color: var(--primelogobsbcolours-logobluepurple);
 }
 .menu-card p{
     font-family: var(--second-family);
-font-weight: 400;
-font-size: 18px;
-letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.05em;
 color: var(--primelogobsbcolours-clearwhite);
 }
 
@@ -236,25 +226,26 @@ color: var(--primelogobsbcolours-clearwhite);
     border: none;
     background: var(--primelogobsbcolours-logoyellow);
     padding: 10px 40px;
-    padding: 10px 40px;
-width: 236px;
-height: 48px;
+    width: 180px;
+    height: 38px;
     font-family: var(--font-family);
-font-weight: 700;
-font-size: 20px;
-letter-spacing: 0.05em;
-color: var(--primelogobsbcolours-supportlightpurple);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    color: var(--primelogobsbcolours-supportlightpurple);
 }
 .menu-button:hover{
 
-outline: 1px solid var(--primelogobsbcolours-supportlightpurple);
-padding: 10px 40px;
-background: var(--primelogobsbcolours-softlightyellow);
-transform: translate(-10px, -5px);
+    outline: 1px solid var(--primelogobsbcolours-supportlightpurple);
+    padding: 10px 40px;
+    background: var(--primelogobsbcolours-softlightyellow);
+    transform: translate(-10px, -5px);
 }
 .menu-button__bg{
     /* background: url("../images/button__background.svg"); */
     content: url("../images/Menu/Psevdo.svg");
+    width: 180px;
     position: absolute;
     left: 0;
     bottom: 0%;
@@ -268,10 +259,8 @@ font-weight: 700;
 letter-spacing: 0.05em;
 color: var(--primelogobsbcolours-softlightyellow);
 }
-.menu-card{
-    
-}
 .menu__contacts{
+    margin-bottom: auto;
     margin-top: 15px;
     position: relative;
     display: grid;
