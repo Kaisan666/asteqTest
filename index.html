@@ -23,14 +23,46 @@
         <div>Ваша заявка успешно отправлена!</div>
     </div>
     <div class="menu">
-        <div class="popup-form">
+        <div class="popup-form-wrapper">
             <div class="popup-form__header">
-                <h3 class="popup-form__title"></h3>
+                <h3 class="popup-form__title">Заявка на услугу</h3>
                 <button class="popup-form__close">
-                    <img src="" alt="">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.0623 0.846524L13.2158 8.69304L5.36927 0.84652L0.875907 5.33989L8.72243 13.1864L0.875908 21.0329L4.93768 25.1535L12.7842 17.307L20.6307 25.1535L25.1535 20.6307L17.307 12.7842L25.1535 4.93769L21.0623 0.846524Z" />
+                      </svg>
                 </button>
             </div>
-        </div>
+                <form action="" class="popup-form">
+                    <div class="popup-form__main">
+                        <div class="popup-form__fio-input-wrapper form-input-wrapper">
+                            <input class = "popup-form__fio-input" type="text" name="FIO" placeholder="ФИО">
+                        </div>
+                            <div class="popup-form__phone-input-wrapper form-input-wrapper">
+                                <input class = "popup-form__phone-input" type="tel"  name="phone" placeholder="Номер телефона">
+                            </div>
+                            <div class="popup-form__email-input-wrapper form-input-wrapper">
+                                <input class = "popup-form__email-input" type="email" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="popup-form__select-wrapper">
+                                <select name="service" id="" class="popup-form__service-select">
+                                    <option value="" disabled selected>Выберите услугу</option>
+                                    <option value="software implementation">Внедрение ПО</option>
+                                    <option value="information security event">Мероприятия по ИБ</option>
+                                </select>
+                            </div>
+                    <textarea class = "popup-form__comment-input" name="comment" placeholder="Комментарий"></textarea>
+                </div>
+                    <div class="popup-form__submit-wrapper">
+                        <div class="popup-form__disclaimer">Нажимая на кнопку "Отправить" вы соглашаетесь на обработку внесенных вами данных</div>
+                        <div class="button-jump__wrapper">
+                            <button class="popup-form__submit-button button-jump">Отправить</button>
+                            <div class="button-jump__bg popup-form__button-jump-bg"></div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        
         <svg class="bgMAIN" width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="BG">
             <circle id="Ellipse18" cx="481" cy="491" r="778" fill="url(#paint0_linear_270_467)"/>
@@ -947,11 +979,12 @@
                             <div>© 2023 ООО «БС-БЕЗОПАСНОСТЬ»</div>
                             <div class="footer__adress">
                                 <div>121170, Российская Федерация,</div>
-                                г. Москва, ул. 1812 года, д.10, к.2, кв.1</div>
-                            <div>ИНН 7730561330 | ОГРН 5077746767995</div>
+                                <span>г. Москва, ул. 1812 года, д.10, к.2, кв.1</span> <span>| ИНН 7730561330 | ОГРН 5077746767995</span>
+                            </div>
+                            <div class="inn_ogrn">ИНН 7730561330 | ОГРН 5077746767995</div>
                             <div>Политика конфиденциальности</div>
                             <div>Разработано в 
-                                <a href="">
+                                <a href="https://asteq.ru/">
                                     <svg width="45" height="11" viewBox="0 0 45 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.34818 8.15851H2.42981L1.71324 10.0239H0L3.96716 0.131836H4.04534L7.99947 10.0239H5.99961L5.34818 8.15851ZM4.76842 6.56872L3.92157 4.25116L3.03563 6.56872H4.76842Z" fill="#2D2650" />
                                         <path d="M13.2105 2.103C12.8988 2.0782 12.5874 2.15708 12.3181 2.3291C12.2085 2.41541 12.1214 2.53112 12.0655 2.6649C12.0095 2.79867 11.9866 2.94591 11.9989 3.09221C12.0067 3.25613 12.0533 3.4151 12.1344 3.55373C12.2154 3.69236 12.328 3.80597 12.4614 3.88357C12.8428 4.15699 13.2542 4.37773 13.6861 4.54068C14.0609 4.68429 14.4193 4.87394 14.7544 5.10594C15.0574 5.33209 15.3073 5.63217 15.484 5.98209C15.691 6.41819 15.7897 6.9052 15.7706 7.39524C15.7738 7.89275 15.6445 8.38068 15.3984 8.80053C15.1523 9.22037 14.7998 9.5543 14.3831 9.76227C13.8774 10.0241 13.3211 10.1502 12.761 10.1297C12.2354 10.1302 11.7127 10.0444 11.2106 9.87532C10.692 9.71224 10.2029 9.45415 9.76448 9.11222L10.5592 7.64254C10.8753 7.89516 11.2244 8.0952 11.595 8.23607C11.9312 8.38196 12.2883 8.46326 12.6503 8.4763C12.9846 8.4846 13.315 8.39685 13.6079 8.22193C13.7389 8.13574 13.8445 8.01093 13.9126 7.86205C13.9807 7.71317 14.0083 7.54637 13.9922 7.38111C13.9922 6.89357 13.5688 6.46963 12.6894 6.11634C12.2586 5.93801 11.8387 5.73034 11.4321 5.49456C11.0863 5.2895 10.7878 5.00201 10.5592 4.65373C10.3018 4.23691 10.174 3.74177 10.1944 3.24059C10.1854 2.87218 10.2487 2.5059 10.3801 2.16603C10.5115 1.82617 10.708 1.52048 10.9566 1.26924C11.5027 0.736431 12.209 0.437537 12.9434 0.42842C13.4966 0.415931 14.0483 0.496981 14.5785 0.668656C15.0399 0.840151 15.478 1.07778 15.8814 1.37523L15.2299 2.78838C14.6206 2.37935 13.9261 2.14362 13.2105 2.103Z" fill="#2D2650" />
@@ -973,7 +1006,7 @@
     <script src="js/marquee.js"></script>
     <script src="js/text.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/menuButton.js"></script>
+    <script src="js/popupForm.js"></script>
     <script src="js/mobileFooterList.js"></script>
     <script src="js/cookieBanner.js"></script>
 

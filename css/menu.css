@@ -1,4 +1,14 @@
 @import url('menuMobile.css');
+.header__menu-button.active{
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+    
+}
+.header__menu-button{
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+
+}
 @media (width >= 1440px) {
     
 

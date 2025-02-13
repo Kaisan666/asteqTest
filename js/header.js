@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', () => {
             menu.classList.toggle("active");
             body.classList.toggle("noScroll")
+            menuBtn.forEach(button => {
+                button.classList.toggle("active")
+            })
         });
     });
 });

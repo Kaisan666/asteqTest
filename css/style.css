@@ -30,7 +30,6 @@ body{
 }
 .second-section{
     height: 1525px;
-    padding-top: 100px;
     padding-bottom: 70px;
 }
 .main::before{
@@ -38,9 +37,9 @@ body{
     padding-top: 15px;
     padding-left: 19px;
     position: absolute;
-    top: -9.25%;
+    top: 0%;
     right: 0;
-    transform: translateX(335px);
+    transform: translate(310px, -66.5%);
     background: url("../images/header/LOGOVectorShadow.svg");
     background-size: 100%;
     background-position: 0px 0px;
@@ -112,6 +111,9 @@ white-space: nowrap;
 }
 .second-section__cirles{
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 .second-section__cirles-wrapper{
     display: flex;
@@ -135,6 +137,7 @@ white-space: nowrap;
     overflow: hidden;
     white-space: nowrap; 
     transition: width 5s ease;
+    text-transform: uppercase;
 
 }
 .second-section__cirles-descriptions-title.active{
@@ -267,6 +270,9 @@ color: var(--primelogobsbcolours-softlightyellow);
     margin-top: 80px;
     max-width: 708px ;
 }
+/* .annotation{
+    margin-left: 165px;
+} */
 .annotation h3{
     font-family: var(--font-family);
     font-weight: 900;
@@ -496,7 +502,11 @@ text-transform: uppercase;
 .section-wrapper{
     margin-top: 92px;
 }
-
+#cloudSVG,
+#eyeSVG,
+#lock{
+    margin-top: 18px;
+}
 
 
 .scroller{
@@ -543,9 +553,6 @@ text-transform: uppercase;
     margin-top: 56px;
 }
 
-.fourth-section{
-    padding-top: 92px;
-}
 
 .cloud-container {
     position: relative;
@@ -619,14 +626,18 @@ text-transform: uppercase;
 .fourth-section__descriptions{
     display: flex;
     flex-direction: column;
-    gap: 76px;
+    gap: 48px;
+    align-items: center;
 }
 .description-card{
     display: flex;
     gap: 44px;
+    height: 370px;
+    align-items: center;
 }
 .description-card:nth-child(2){
     flex-direction: row-reverse;
+    /* align-self: flex-start; */
 }
 .description-card__text-wrapper{
     width: 641px;
@@ -707,7 +718,9 @@ letter-spacing: 0.05em;
 color: var(--primelogobsbcolours-softlightyellow);
 }
 
-
+.fourth-section__swiper{
+    margin-top: 56px;
+}
 
 .swiper-logo {
     width: 1228px;

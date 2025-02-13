@@ -1,6 +1,5 @@
 const swiper_news = new Swiper('.swiper_wrapper-news', {
   loop: true,
-
   pagination: {
     el: '.swiper-pagination',
   },
@@ -42,6 +41,7 @@ const swiper_logo = new Swiper('.swiper_wrapper-logo', {
             spaceBetween : 24,
             slidesPerView : 3.7,
             slidesPerGroup: 3,
+            
         },
         1440 : {
             spaceBetween : 64,

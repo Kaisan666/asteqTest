@@ -1,12 +1,31 @@
+const menuButton = document.querySelector(".menu-button")
+const popupFormWrapper = document.querySelector(".popup-form-wrapper")
+
+const openPopupForm = () =>{
+    menuButton.addEventListener("click", () =>{
+        popupFormWrapper.classList.add("active")
+    })
+}
+openPopupForm()
 
 
-const sendMainFormData = () =>{
-const contactForm = document.querySelector(".contact-form-main");
-const fioInput = contactForm.querySelector(".contact-form__fio-input");
-const phoneInput = contactForm.querySelector(".contact-form__phone-input");
-const emailInput = contactForm.querySelector(".contact-form__email-input");
-const commentInput = contactForm.querySelector(".contact-form__comment-input");
 
+const closePopupFormButton = document.querySelector(".popup-form__close")
+const closePopupForm = () =>{
+    closePopupFormButton.addEventListener("click", () => {
+        popupFormWrapper.classList.remove("active")
+    })
+}
+closePopupForm()
+
+
+const sendPopupFormData = () =>{
+const popupForm = document.querySelector(".popup-form");
+const fioInput = popupForm.querySelector(".popup-form__fio-input");
+const phoneInput = popupForm.querySelector(".popup-form__phone-input");
+const emailInput = popupForm.querySelector(".popup-form__email-input");
+const commentInput = popupForm.querySelector(".popup-form__comment-input");
+const popupSelect = popupForm.querySelector(".popup-form__service-select")
 
 function showError(input, message) {
     const parent = input.parentElement;
@@ -54,13 +73,13 @@ function phoneNumberFormatter() {
 
 phoneInput.addEventListener('input', phoneNumberFormatter);
 
-contactForm.addEventListener("submit", (e) => {
+popupForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let hasErrors = false;
 
-    contactForm.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
-    contactForm.querySelectorAll('.invalid-icon').forEach(el => el.classList.remove('invalid-icon'));
-    contactForm.querySelectorAll('.invalid-text').forEach(el => el.remove());
+    popupForm.querySelectorAll('.invalid').forEach(el => el.classList.remove('invalid'));
+    popupForm.querySelectorAll('.invalid-icon').forEach(el => el.classList.remove('invalid-icon'));
+    popupForm.querySelectorAll('.invalid-text').forEach(el => el.remove());
 
     if (fioInput.value.trim().length < 2) {
         showError(fioInput, 'Введите корректное ФИО');
@@ -75,6 +94,9 @@ contactForm.addEventListener("submit", (e) => {
         showError(phoneInput, 'Неверный формат телефона');
         hasErrors = true;
     }
+    if (popupSelect.value == ""){
+        showError(popupSelect, "Услуга не выбрана")
+    }
 
     if (emailInput.value.trim() === '') {
         showError(emailInput, 'Поле обязательно для заполнения');
@@ -86,7 +108,7 @@ contactForm.addEventListener("submit", (e) => {
 
 
     if (!hasErrors) {
-        const formData = new FormData(contactForm)
+        const formData = new FormData(popupForm)
         const sendData = async (data) => {
             const response = await fetch("https://dummyjson.com/test", {
                 method: "POST",
@@ -108,7 +130,7 @@ contactForm.addEventListener("submit", (e) => {
                 setTimeout(() => {
                     successNotification.classList.remove("active");
                 }, 2500);
-                contactForm.reset();
+                popupForm.reset();
             } catch (e) {
                 console.error(e);
                 const errorNotification = document.querySelector(".form-notification-error");
@@ -122,7 +144,5 @@ contactForm.addEventListener("submit", (e) => {
         handleSubmit();
         }
 });
-
-
 }
-sendMainFormData()
+sendPopupFormData()
